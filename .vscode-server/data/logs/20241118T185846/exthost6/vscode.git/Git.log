@@ -1,0 +1,107 @@
+2024-11-18 19:30:12.810 [info] [main] Log level: Info
+2024-11-18 19:30:12.810 [info] [main] Validating found git in: "git"
+2024-11-18 19:30:12.810 [info] [main] Using git "1.8.3.1" from "git"
+2024-11-18 19:30:12.810 [info] [Model][doInitialScan] Initial repository scan started
+2024-11-18 19:30:12.810 [info] > git rev-parse --show-toplevel [729ms]
+2024-11-18 19:30:12.813 [info] > git rev-parse --git-dir --git-common-dir [283ms]
+2024-11-18 19:30:12.813 [info] [Model][openRepository] Opened repository: /home/thuscc24team04
+2024-11-18 19:30:12.813 [warning] [Git][getRemotes] Error: ENOENT: no such file or directory, open '/home/thuscc24team04/--git-common-dir/config'
+2024-11-18 19:30:12.813 [info] > git rev-parse --show-toplevel [74ms]
+2024-11-18 19:30:12.813 [info] > git remote --verbose [85ms]
+2024-11-18 19:30:12.813 [info] > git config --get commit.template [57ms]
+2024-11-18 19:30:12.863 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname) refs/heads/master refs/remotes/master [56ms]
+2024-11-18 19:30:12.863 [warning] [Git][getBranch] No such branch: master
+2024-11-18 19:30:12.913 [info] > git rev-parse --show-toplevel [61ms]
+2024-11-18 19:30:12.939 [info] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [55ms]
+2024-11-18 19:30:12.968 [info] > git rev-parse --show-toplevel [31ms]
+2024-11-18 19:30:12.979 [info] > git rev-parse --show-toplevel [3ms]
+2024-11-18 19:30:13.010 [info] > git rev-parse --show-toplevel [19ms]
+2024-11-18 19:30:14.875 [info] > git rev-parse --show-toplevel [1856ms]
+2024-11-18 19:30:14.916 [info] > git check-ignore -v -z --stdin [32ms]
+2024-11-18 19:30:14.936 [info] > git rev-parse --show-toplevel [42ms]
+2024-11-18 19:30:14.948 [info] > git status -z -uall [2077ms]
+2024-11-18 19:30:14.951 [info] > git rev-parse --show-toplevel [8ms]
+2024-11-18 19:30:15.074 [warning] [Git][getRemotes] Error: ENOENT: no such file or directory, open '/home/thuscc24team04/--git-common-dir/config'
+2024-11-18 19:30:15.096 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname) refs/heads/master refs/remotes/master [44ms]
+2024-11-18 19:30:15.097 [warning] [Git][getBranch] No such branch: master
+2024-11-18 19:30:15.098 [error] [GitHistoryProvider][resolveHEADMergeBase] Failed to resolve merge base for master: Error: No such branch: master.
+2024-11-18 19:30:15.595 [info] > git config --get commit.template [510ms]
+2024-11-18 19:30:15.595 [info] > git remote --verbose [522ms]
+2024-11-18 19:30:15.595 [info] > git rev-parse --show-toplevel [532ms]
+2024-11-18 19:30:15.597 [info] [Model][doInitialScan] Initial repository scan completed - repositories (1), closed repositories (0), parent repositories (1), unsafe repositories (0)
+2024-11-18 19:30:15.625 [info] > git show --textconv :WORK/Neko/json-fortran/README.md [18ms]
+2024-11-18 19:30:15.636 [info] > git ls-files --stage -- /home/thuscc24team04/WORK/Neko/json-fortran/README.md [16ms]
+2024-11-18 19:30:15.636 [info] fatal: '/home/thuscc24team04/WORK/Neko/json-fortran/README.md' is outside repository
+2024-11-18 19:30:15.726 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname) refs/heads/master refs/remotes/master [92ms]
+2024-11-18 19:30:15.726 [warning] [Git][getBranch] No such branch: master
+2024-11-18 19:30:15.746 [info] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [7ms]
+2024-11-18 19:30:16.163 [info] > git status -z -uall [430ms]
+2024-11-18 19:30:17.000 [info] > git ls-files --stage -- /home/thuscc24team04/WORK/Neko/json-fortran/README.md [43ms]
+2024-11-18 19:30:17.000 [info] fatal: '/home/thuscc24team04/WORK/Neko/json-fortran/README.md' is outside repository
+2024-11-18 19:30:17.045 [info] > git show --textconv :WORK/Neko/json-fortran/README.md [12ms]
+2024-11-18 19:30:18.074 [info] > git ls-files --stage -- /home/thuscc24team04/WORK/Neko/json-fortran/README.md [11ms]
+2024-11-18 19:30:18.074 [info] fatal: '/home/thuscc24team04/WORK/Neko/json-fortran/README.md' is outside repository
+2024-11-18 19:30:18.105 [info] > git show --textconv :WORK/Neko/json-fortran/README.md [11ms]
+2024-11-18 19:30:28.636 [info] > git ls-files --stage -- /home/thuscc24team04/WORK/Neko/json-fortran/README.md [14ms]
+2024-11-18 19:30:28.637 [info] fatal: '/home/thuscc24team04/WORK/Neko/json-fortran/README.md' is outside repository
+2024-11-18 19:30:28.666 [info] > git show --textconv :WORK/Neko/json-fortran/README.md [13ms]
+2024-11-18 19:30:43.723 [info] > git show --textconv :.ssh/authorized_keys [15ms]
+2024-11-18 19:30:43.726 [info] > git ls-files --stage -- /home/thuscc24team04/.ssh/authorized_keys [13ms]
+2024-11-18 19:30:43.735 [info] > git cat-file -s f4aa43c740ad036f526b1b441f29290e808ae700 [4ms]
+2024-11-18 19:30:44.096 [info] > git check-ignore -v -z --stdin [13ms]
+2024-11-18 19:30:45.551 [info] > git show --textconv :WORK/Neko/json-fortran/README.md [17ms]
+2024-11-18 19:30:45.564 [info] > git ls-files --stage -- /home/thuscc24team04/WORK/Neko/json-fortran/README.md [13ms]
+2024-11-18 19:30:45.564 [info] fatal: '/home/thuscc24team04/WORK/Neko/json-fortran/README.md' is outside repository
+2024-11-18 19:30:45.878 [info] > git check-ignore -v -z --stdin [14ms]
+2024-11-18 19:30:47.776 [info] > git show --textconv :.bash_history [15ms]
+2024-11-18 19:30:47.783 [info] > git ls-files --stage -- /home/thuscc24team04/.bash_history [13ms]
+2024-11-18 19:30:47.794 [info] > git cat-file -s ddba7a154824315dd0d06e62b1a376bed1554186 [4ms]
+2024-11-18 19:30:55.863 [info] > git show --textconv :WORK/task1/run.sh [13ms]
+2024-11-18 19:30:55.872 [info] > git ls-files --stage -- /home/thuscc24team04/WORK/task1/run.sh [13ms]
+2024-11-18 19:30:55.872 [info] fatal: '/home/thuscc24team04/WORK/task1/run.sh' is outside repository
+2024-11-18 19:30:56.246 [info] > git check-ignore -v -z --stdin [14ms]
+2024-11-18 19:31:52.107 [info] > git ls-files --stage -- /home/thuscc24team04/WORK/task1/run.sh [13ms]
+2024-11-18 19:31:52.108 [info] fatal: '/home/thuscc24team04/WORK/task1/run.sh' is outside repository
+2024-11-18 19:31:52.137 [info] > git show --textconv :WORK/task1/run.sh [13ms]
+2024-11-18 19:32:25.384 [warning] [Git][getRemotes] Error: ENOENT: no such file or directory, open '/home/thuscc24team04/--git-common-dir/config'
+2024-11-18 19:32:25.394 [info] > git remote --verbose [10ms]
+2024-11-18 19:32:25.403 [info] > git config --get commit.template [10ms]
+2024-11-18 19:32:25.412 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname) refs/heads/master refs/remotes/master [9ms]
+2024-11-18 19:32:25.426 [info] > git rev-list --left-right --count master...origin/master [6ms]
+2024-11-18 19:32:25.447 [info] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [2ms]
+2024-11-18 19:32:26.528 [info] > git status -z -uall [1093ms]
+2024-11-18 19:32:26.595 [info] > git merge-base refs/heads/master refs/remotes/origin/master [5ms]
+2024-11-18 19:32:26.620 [info] > git diff --name-status -z --diff-filter=ADMR 2ad862770c05e16a6b8bda5d9575767a22936ef5...refs/remotes/origin/master [14ms]
+2024-11-18 19:33:02.806 [warning] [Git][getRemotes] Error: ENOENT: no such file or directory, open '/home/thuscc24team04/--git-common-dir/config'
+2024-11-18 19:33:02.817 [info] > git remote --verbose [11ms]
+2024-11-18 19:33:02.827 [info] > git config --get commit.template [11ms]
+2024-11-18 19:33:02.835 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname) refs/heads/master refs/remotes/master [9ms]
+2024-11-18 19:33:02.853 [info] > git rev-list --left-right --count master...origin/master [9ms]
+2024-11-18 19:33:02.870 [info] > git ls-files --stage -- /home/thuscc24team04/WORK/task1/run.sh [18ms]
+2024-11-18 19:33:02.870 [info] fatal: '/home/thuscc24team04/WORK/task1/run.sh' is outside repository
+2024-11-18 19:33:02.874 [info] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [4ms]
+2024-11-18 19:33:02.925 [info] > git show --textconv :WORK/task1/run.sh [13ms]
+2024-11-18 19:33:03.309 [info] > git status -z -uall [448ms]
+2024-11-18 19:33:04.355 [info] > git ls-files --stage -- /home/thuscc24team04/WORK/task1/run.sh [13ms]
+2024-11-18 19:33:04.355 [info] fatal: '/home/thuscc24team04/WORK/task1/run.sh' is outside repository
+2024-11-18 19:33:04.389 [info] > git show --textconv :WORK/task1/run.sh [13ms]
+2024-11-18 19:33:08.324 [warning] [Git][getRemotes] Error: ENOENT: no such file or directory, open '/home/thuscc24team04/--git-common-dir/config'
+2024-11-18 19:33:08.334 [info] > git remote --verbose [10ms]
+2024-11-18 19:33:08.343 [info] > git config --get commit.template [10ms]
+2024-11-18 19:33:08.348 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname) refs/heads/master refs/remotes/master [6ms]
+2024-11-18 19:33:08.360 [info] > git rev-list --left-right --count master...origin/master [5ms]
+2024-11-18 19:33:08.382 [info] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [5ms]
+2024-11-18 19:33:08.796 [info] > git status -z -uall [428ms]
+2024-11-18 19:33:09.926 [info] > git ls-files --stage -- /home/thuscc24team04/WORK/task1/run.sh [13ms]
+2024-11-18 19:33:09.926 [info] fatal: '/home/thuscc24team04/WORK/task1/run.sh' is outside repository
+2024-11-18 19:33:09.967 [info] > git show --textconv :WORK/task1/run.sh [13ms]
+2024-11-18 19:33:13.811 [warning] [Git][getRemotes] Error: ENOENT: no such file or directory, open '/home/thuscc24team04/--git-common-dir/config'
+2024-11-18 19:33:13.821 [info] > git remote --verbose [10ms]
+2024-11-18 19:33:13.830 [info] > git config --get commit.template [10ms]
+2024-11-18 19:33:13.834 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname) refs/heads/master refs/remotes/master [5ms]
+2024-11-18 19:33:13.848 [info] > git rev-list --left-right --count master...origin/master [4ms]
+2024-11-18 19:33:13.875 [info] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [6ms]
+2024-11-18 19:33:14.775 [info] > git status -z -uall [916ms]
+2024-11-18 19:33:15.879 [info] > git ls-files --stage -- /home/thuscc24team04/WORK/task1/run.sh [13ms]
+2024-11-18 19:33:15.879 [info] fatal: '/home/thuscc24team04/WORK/task1/run.sh' is outside repository
+2024-11-18 19:33:15.913 [info] > git show --textconv :WORK/task1/run.sh [12ms]

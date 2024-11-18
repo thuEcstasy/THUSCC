@@ -1,4 +1,4 @@
-2024-11-18 19:22:52.355 [warning] [certificates] Failed to parse certificate # ACCVRAIZ1
+2024-11-18 19:30:14.565 [warning] [certificates] Failed to parse certificate # ACCVRAIZ1
  Error: error:0480006C:PEM routines::no start line
     at new X509Certificate (node:internal/crypto/x509:119:21)
     at /home/thuscc24team04/.vscode-server/extensions/github.copilot-1.245.0/lib/src/network/certificateReaders.ts:79:36
@@ -15,11 +15,7 @@
   reason: 'no start line',
   code: 'ERR_OSSL_PEM_NO_START_LINE'
 }
-2024-11-18 19:22:52.355 [info] [certificates] Removed 12 expired certificates
-2024-11-18 19:22:53.603 [info] [fetcher] Using Helix fetcher, Electron fetcher is not available.
-2024-11-18 19:22:53.603 [info] [code-referencing] Public code references are enabled.
-2024-11-18 19:22:53.675 [info] [auth] Successfully authenticated
-2024-11-18 19:30:55.590 [info] [fetcher] Using Helix fetcher, Electron fetcher is not available.
-2024-11-18 19:30:55.590 [info] [code-referencing] Public code references are enabled.
-2024-11-18 19:30:55.625 [info] [fetcher] Using Helix fetcher, Electron fetcher is not available.
-2024-11-18 19:30:55.625 [info] [code-referencing] Public code references are enabled.
+2024-11-18 19:30:14.565 [info] [certificates] Removed 12 expired certificates
+2024-11-18 19:30:16.029 [info] [fetcher] Using Helix fetcher, Electron fetcher is not available.
+2024-11-18 19:30:16.029 [info] [code-referencing] Public code references are enabled.
+2024-11-18 19:30:16.104 [info] [auth] Successfully authenticated

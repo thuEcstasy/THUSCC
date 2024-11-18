@@ -169,3 +169,7 @@
 2024-11-18 19:24:20.388 [warning] RequestStore#acceptReply was called without receiving a matching request 204
 2024-11-18 19:28:53.220 [warning] [File Watcher (node.js)] Watcher shutdown because watched path got deleted
 2024-11-18 19:28:53.222 [warning] [File Watcher (node.js)] Watcher shutdown because watched path got deleted
+2024-11-18 19:30:09.538 [info] [<unknown>][b26b620e][ExtensionHostConnection] New connection established.
+2024-11-18 19:30:09.548 [info] [<unknown>][b26b620e][ExtensionHostConnection] <33506> Launched Extension Host Process.
+2024-11-18 19:30:09.550 [info] [<unknown>][ff08bd16][ManagementConnection] New connection established.
+2024-11-18 19:30:10.175 [error] [network] #10: https://az764295.vo.msecnd.net/extensions/marketplace.json - error GET read ECONNRESET

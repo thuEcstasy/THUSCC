@@ -208,3 +208,7 @@ Generating translation files failed. Error: ENOENT: no such file or directory, o
 [19:24:20] RequestStore#acceptReply was called without receiving a matching request 204
 [19:28:53] [File Watcher (node.js)] Watcher shutdown because watched path got deleted
 [19:28:53] [File Watcher (node.js)] Watcher shutdown because watched path got deleted
+[19:30:09] [<unknown>][b26b620e][ExtensionHostConnection] New connection established.
+[19:30:09] [<unknown>][b26b620e][ExtensionHostConnection] <33506> Launched Extension Host Process.
+[19:30:09] [<unknown>][ff08bd16][ManagementConnection] New connection established.
+[19:30:10] [network] #10: https://az764295.vo.msecnd.net/extensions/marketplace.json - error GET read ECONNRESET
