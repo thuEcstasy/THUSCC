@@ -1,0 +1,19 @@
+2024-11-17 16:07:49.004 [info] 
+
+
+
+
+2024-11-17 16:07:49.036 [info] Extension host agent started.
+2024-11-17 16:07:49.102 [info] [<unknown>][1e364ba3][ManagementConnection] New connection established.
+2024-11-17 16:07:49.108 [info] [<unknown>][a8a4f201][ExtensionHostConnection] New connection established.
+2024-11-17 16:07:50.686 [info] [<unknown>][a8a4f201][ExtensionHostConnection] <21860> Launched Extension Host Process.
+2024-11-17 16:07:50.793 [error] [network] #1: https://az764295.vo.msecnd.net/extensions/marketplace.json - error GET read ECONNRESET
+2024-11-17 16:12:49.037 [info] New EH opened, aborting shutdown
+2024-11-17 19:01:18.422 [info] [<unknown>][1e364ba3][ManagementConnection] The client has disconnected, will wait for reconnection 3h before disposing...
+2024-11-17 22:01:02.252 [info] [<unknown>][a8a4f201][ExtensionHostConnection] <21860> Extension Host Process exited with code: 0, signal: null.
+2024-11-17 22:01:02.261 [info] Last EH closed, waiting before shutting down
+2024-11-17 22:01:02.267 [error] Error: Unexpected SIGPIPE
+    at process.<anonymous> (file:///home/thuscc24team04/.vscode-server/cli/servers/Stable-f1a4fb101478ce6ec82fe9627c43efbf9e98c813/server/out/server-main.js:183:1060)
+    at process.emit (node:events:531:35)
+2024-11-17 22:01:29.328 [info] [<unknown>][1e364ba3][ManagementConnection] The reconnection grace time of 3h has expired, so the connection will be disposed.
+2024-11-17 22:06:02.354 [info] Last EH closed, shutting down

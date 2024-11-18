@@ -1,0 +1,86 @@
+2024-11-18 18:58:52.282 [info] Can't use the Electron fetcher in this environment.
+2024-11-18 18:58:52.282 [info] Using the Helix fetcher.
+2024-11-18 18:58:52.282 [info] Initializing Git extension service.
+2024-11-18 18:58:52.282 [info] Successfully activated the vscode.git extension.
+2024-11-18 18:58:52.282 [info] Enablement state of the vscode.git extension: true.
+2024-11-18 18:58:52.282 [info] Successfully registered Git commit message provider.
+2024-11-18 18:58:54.534 [info] Logged in as nailaos
+2024-11-18 18:58:54.623 [error] Error: error:0480006C:PEM routines::no start line
+    at new X509Certificate (node:internal/crypto/x509:119:21)
+    at /home/thuscc24team04/.vscode-server/extensions/github.copilot-chat-0.22.2/dist/extension.js:784:7894
+    at Array.filter (<anonymous>)
+    at Tw.removeExpiredCertificates (/home/thuscc24team04/.vscode-server/extensions/github.copilot-chat-0.22.2/dist/extension.js:784:7873)
+    at Tw.getAllRootCAs (/home/thuscc24team04/.vscode-server/extensions/github.copilot-chat-0.22.2/dist/extension.js:784:7708)
+    at Cw.createSecureContext (/home/thuscc24team04/.vscode-server/extensions/github.copilot-chat-0.22.2/dist/extension.js:784:9635)
+    at Cw.applyToRequestOptions (/home/thuscc24team04/.vscode-server/extensions/github.copilot-chat-0.22.2/dist/extension.js:784:9881)
+    at Ey.fetch (/home/thuscc24team04/.vscode-server/extensions/github.copilot-chat-0.22.2/dist/extension.js:785:2148)
+    at iE.fetchCopilotToken (/home/thuscc24team04/.vscode-server/extensions/github.copilot-chat-0.22.2/dist/extension.js:282:35579)
+    at iE.authFromGitHubToken (/home/thuscc24team04/.vscode-server/extensions/github.copilot-chat-0.22.2/dist/extension.js:282:33288)
+    at iE._auth (/home/thuscc24team04/.vscode-server/extensions/github.copilot-chat-0.22.2/dist/extension.js:613:2720): Failed to parse certificate # ACCVRAIZ1
+
+2024-11-18 18:58:54.623 [info] Removed 12 expired certificates
+2024-11-18 18:58:55.403 [warning] Invalid copilot token: missing token: 403 
+2024-11-18 18:58:55.408 [error] Error: No access to GitHub Copilot found. You are currently logged in as nailaos.
+    at iE._authShowWarnings (/home/thuscc24team04/.vscode-server/extensions/github.copilot-chat-0.22.2/dist/extension.js:613:3084)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at iE.getCopilotToken (/home/thuscc24team04/.vscode-server/extensions/github.copilot-chat-0.22.2/dist/extension.js:613:2135)
+    at jk.getCopilotToken (/home/thuscc24team04/.vscode-server/extensions/github.copilot-chat-0.22.2/dist/extension.js:282:37843)
+    at EN.waitForChatEnabled (/home/thuscc24team04/.vscode-server/extensions/github.copilot-chat-0.22.2/dist/extension.js:611:3181)
+    at EN.run (/home/thuscc24team04/.vscode-server/extensions/github.copilot-chat-0.22.2/dist/extension.js:611:2900)
+    at eE.askToUpgradeAuthPermissions (/home/thuscc24team04/.vscode-server/extensions/github.copilot-chat-0.22.2/dist/extension.js:611:2338): Failed to get copilot token
+2024-11-18 18:58:55.408 [error] GitHub Copilot could not connect to server. Extension activation failed: "No access to GitHub Copilot found. You are currently logged in as nailaos."
+2024-11-18 18:58:55.408 [warning] [LanguageModelAccess] LanguageModel/Embeddings are not available without auth token
+2024-11-18 18:58:55.408 [error] Error: No access to GitHub Copilot found. You are currently logged in as nailaos.
+    at iE._authShowWarnings (/home/thuscc24team04/.vscode-server/extensions/github.copilot-chat-0.22.2/dist/extension.js:613:3084)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at iE.getCopilotToken (/home/thuscc24team04/.vscode-server/extensions/github.copilot-chat-0.22.2/dist/extension.js:613:2135)
+    at jk.getCopilotToken (/home/thuscc24team04/.vscode-server/extensions/github.copilot-chat-0.22.2/dist/extension.js:282:37843)
+    at fE._getAuthSession (/home/thuscc24team04/.vscode-server/extensions/github.copilot-chat-0.22.2/dist/extension.js:628:2597)
+    at t (/home/thuscc24team04/.vscode-server/extensions/github.copilot-chat-0.22.2/dist/extension.js:628:631)
+    at fE._registerLanguageModels (/home/thuscc24team04/.vscode-server/extensions/github.copilot-chat-0.22.2/dist/extension.js:628:1810)
+    at async Promise.all (index 0)
+    at async Promise.allSettled (index 0)
+    at Ev.waitForActivationBlockers (/home/thuscc24team04/.vscode-server/extensions/github.copilot-chat-0.22.2/dist/extension.js:282:25616)
+    at /home/thuscc24team04/.vscode-server/extensions/github.copilot-chat-0.22.2/dist/extension.js:1817:4068
+    at qPt (/home/thuscc24team04/.vscode-server/extensions/github.copilot-chat-0.22.2/dist/extension.js:1817:3881)
+    at B0.n (file:///home/thuscc24team04/.vscode-server/cli/servers/Stable-f1a4fb101478ce6ec82fe9627c43efbf9e98c813/server/out/vs/workbench/api/node/extensionHostProcess.js:114:4447)
+    at B0.m (file:///home/thuscc24team04/.vscode-server/cli/servers/Stable-f1a4fb101478ce6ec82fe9627c43efbf9e98c813/server/out/vs/workbench/api/node/extensionHostProcess.js:114:4410)
+    at B0.l (file:///home/thuscc24team04/.vscode-server/cli/servers/Stable-f1a4fb101478ce6ec82fe9627c43efbf9e98c813/server/out/vs/workbench/api/node/extensionHostProcess.js:114:3866)
+2024-11-18 18:58:55.408 [warning] [LanguageModelAccess] LanguageModel/Embeddings are not available without auth token
+2024-11-18 18:58:55.408 [error] Error: No access to GitHub Copilot found. You are currently logged in as nailaos.
+    at iE._authShowWarnings (/home/thuscc24team04/.vscode-server/extensions/github.copilot-chat-0.22.2/dist/extension.js:613:3084)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at iE.getCopilotToken (/home/thuscc24team04/.vscode-server/extensions/github.copilot-chat-0.22.2/dist/extension.js:613:2135)
+    at jk.getCopilotToken (/home/thuscc24team04/.vscode-server/extensions/github.copilot-chat-0.22.2/dist/extension.js:282:37843)
+    at fE._getAuthSession (/home/thuscc24team04/.vscode-server/extensions/github.copilot-chat-0.22.2/dist/extension.js:628:2597)
+    at t (/home/thuscc24team04/.vscode-server/extensions/github.copilot-chat-0.22.2/dist/extension.js:628:2060)
+    at fE._registerEmbeddings (/home/thuscc24team04/.vscode-server/extensions/github.copilot-chat-0.22.2/dist/extension.js:628:2559)
+    at async Promise.all (index 1)
+    at async Promise.allSettled (index 0)
+    at Ev.waitForActivationBlockers (/home/thuscc24team04/.vscode-server/extensions/github.copilot-chat-0.22.2/dist/extension.js:282:25616)
+    at /home/thuscc24team04/.vscode-server/extensions/github.copilot-chat-0.22.2/dist/extension.js:1817:4068
+    at qPt (/home/thuscc24team04/.vscode-server/extensions/github.copilot-chat-0.22.2/dist/extension.js:1817:3881)
+    at B0.n (file:///home/thuscc24team04/.vscode-server/cli/servers/Stable-f1a4fb101478ce6ec82fe9627c43efbf9e98c813/server/out/vs/workbench/api/node/extensionHostProcess.js:114:4447)
+    at B0.m (file:///home/thuscc24team04/.vscode-server/cli/servers/Stable-f1a4fb101478ce6ec82fe9627c43efbf9e98c813/server/out/vs/workbench/api/node/extensionHostProcess.js:114:4410)
+    at B0.l (file:///home/thuscc24team04/.vscode-server/cli/servers/Stable-f1a4fb101478ce6ec82fe9627c43efbf9e98c813/server/out/vs/workbench/api/node/extensionHostProcess.js:114:3866)
+2024-11-18 18:58:55.408 [info] activationBlocker from 'languageModelAccess' took for 942ms
+2024-11-18 19:13:55.598 [info] Logged in as nailaos
+2024-11-18 19:13:56.143 [warning] Invalid copilot token: missing token: 403 
+2024-11-18 19:13:56.144 [warning] [LanguageModelAccess] LanguageModel/Embeddings are not available without auth token
+2024-11-18 19:13:56.146 [error] Error: No access to GitHub Copilot found. You are currently logged in as nailaos.
+    at iE._authShowWarnings (/home/thuscc24team04/.vscode-server/extensions/github.copilot-chat-0.22.2/dist/extension.js:613:3084)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at iE.getCopilotToken (/home/thuscc24team04/.vscode-server/extensions/github.copilot-chat-0.22.2/dist/extension.js:613:2135)
+    at jk.getCopilotToken (/home/thuscc24team04/.vscode-server/extensions/github.copilot-chat-0.22.2/dist/extension.js:282:37843)
+    at fE._getAuthSession (/home/thuscc24team04/.vscode-server/extensions/github.copilot-chat-0.22.2/dist/extension.js:628:2597)
+    at Timeout.t [as _onTimeout] (/home/thuscc24team04/.vscode-server/extensions/github.copilot-chat-0.22.2/dist/extension.js:628:631)
+2024-11-18 19:28:56.272 [info] Logged in as nailaos
+2024-11-18 19:28:56.852 [warning] Invalid copilot token: missing token: 403 
+2024-11-18 19:28:56.853 [warning] [LanguageModelAccess] LanguageModel/Embeddings are not available without auth token
+2024-11-18 19:28:56.855 [error] Error: No access to GitHub Copilot found. You are currently logged in as nailaos.
+    at iE._authShowWarnings (/home/thuscc24team04/.vscode-server/extensions/github.copilot-chat-0.22.2/dist/extension.js:613:3084)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at iE.getCopilotToken (/home/thuscc24team04/.vscode-server/extensions/github.copilot-chat-0.22.2/dist/extension.js:613:2135)
+    at jk.getCopilotToken (/home/thuscc24team04/.vscode-server/extensions/github.copilot-chat-0.22.2/dist/extension.js:282:37843)
+    at fE._getAuthSession (/home/thuscc24team04/.vscode-server/extensions/github.copilot-chat-0.22.2/dist/extension.js:628:2597)
+    at Timeout.t [as _onTimeout] (/home/thuscc24team04/.vscode-server/extensions/github.copilot-chat-0.22.2/dist/extension.js:628:631)

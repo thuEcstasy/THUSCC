@@ -1,0 +1,16 @@
+2024-11-10 00:27:34.620 [info] Extension host with pid 69133 started
+2024-11-10 00:27:34.635 [info] Lock '/home/thuscc24team04/.vscode-server/data/User/workspaceStorage/17916b0b5a59b7765117b3edf08c6227/vscode.lock': Lock acquired.
+2024-11-10 00:27:34.851 [info] ExtensionService#_doActivateExtension vscode.git-base, startup: false, activationEvent: '*'
+2024-11-10 00:27:34.872 [info] ExtensionService#_doActivateExtension vscode.github, startup: false, activationEvent: '*'
+2024-11-10 00:27:34.981 [info] Eager extensions activated
+2024-11-10 00:27:34.982 [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch, startup: false, activationEvent: 'onStartupFinished'
+2024-11-10 00:27:34.982 [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'
+2024-11-10 00:27:36.275 [info] ExtensionService#_doActivateExtension vscode.git, startup: false, activationEvent: 'api', root cause: vscode.github
+2024-11-10 00:27:37.654 [info] ExtensionService#_doActivateExtension vscode.configuration-editing, startup: false, activationEvent: 'onLanguage:jsonc'
+2024-11-10 00:27:37.654 [info] ExtensionService#_doActivateExtension vscode.json-language-features, startup: false, activationEvent: 'onLanguage:jsonc'
+2024-11-10 00:27:37.655 [info] ExtensionService#_doActivateExtension vscode.typescript-language-features, startup: false, activationEvent: 'onLanguage:jsonc'
+2024-11-10 00:27:37.656 [info] ExtensionService#_doActivateExtension vscode.emmet, startup: false, activationEvent: 'onLanguage'
+2024-11-10 00:31:09.449 [info] ExtensionService#_doActivateExtension vscode.npm, startup: false, activationEvent: 'onTerminalQuickFixRequest:ms-vscode.npm-command'
+2024-11-10 00:50:23.996 [info] Extension host terminating: received terminate message from renderer
+2024-11-10 00:50:23.997 [info] Lock '/home/thuscc24team04/.vscode-server/data/User/workspaceStorage/17916b0b5a59b7765117b3edf08c6227/vscode.lock': Marking the lockfile as scheduled to be released in 6000 ms.
+2024-11-10 00:50:24.060 [info] Extension host with pid 69133 exiting with code 0

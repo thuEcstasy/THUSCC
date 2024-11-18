@@ -1,0 +1,15 @@
+2024-11-10 12:01:45.227 [info] Extension host with pid 36976 started
+2024-11-10 12:01:45.237 [info] Lock '/home/thuscc24team04/.vscode-server/data/User/workspaceStorage/69c6c0646759c9431d7ff3b6a6052ccb/vscode.lock': Lock acquired.
+2024-11-10 12:01:45.664 [info] ExtensionService#_doActivateExtension vscode.emmet, startup: false, activationEvent: 'onLanguage'
+2024-11-10 12:01:45.665 [info] ExtensionService#_doActivateExtension vscode.git-base, startup: false, activationEvent: '*', root cause: vscode.git
+2024-11-10 12:01:45.885 [info] ExtensionService#_doActivateExtension vscode.git, startup: false, activationEvent: '*'
+2024-11-10 12:01:45.886 [info] ExtensionService#_doActivateExtension vscode.github, startup: false, activationEvent: '*'
+2024-11-10 12:01:46.235 [info] Eager extensions activated
+2024-11-10 12:01:46.235 [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch, startup: false, activationEvent: 'onStartupFinished'
+2024-11-10 12:01:46.236 [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'
+2024-11-10 12:01:46.445 [info] ExtensionService#_doActivateExtension vscode.configuration-editing, startup: false, activationEvent: 'onLanguage:jsonc'
+2024-11-10 12:01:46.446 [info] ExtensionService#_doActivateExtension vscode.json-language-features, startup: false, activationEvent: 'onLanguage:jsonc'
+2024-11-10 12:01:46.446 [info] ExtensionService#_doActivateExtension vscode.typescript-language-features, startup: false, activationEvent: 'onLanguage:jsonc'
+2024-11-10 15:23:38.460 [info] Extension host terminating: renderer disconnected for too long (1)
+2024-11-10 15:23:38.463 [info] Lock '/home/thuscc24team04/.vscode-server/data/User/workspaceStorage/69c6c0646759c9431d7ff3b6a6052ccb/vscode.lock': Marking the lockfile as scheduled to be released in 6000 ms.
+2024-11-10 15:23:38.506 [info] Extension host with pid 36976 exiting with code 0

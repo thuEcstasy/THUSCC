@@ -1,0 +1,56 @@
+*
+* Visual Studio Code Server
+*
+* By using the software, you agree to
+* the Visual Studio Code Server License Terms (https://aka.ms/vscode-server-license) and
+* the Microsoft Privacy Statement (https://privacy.microsoft.com/en-US/privacystatement).
+*
+Server bound to /tmp/code-22f32012-1831-4c4c-92e5-d26ec441e841
+Extension host agent listening on /tmp/code-22f32012-1831-4c4c-92e5-d26ec441e841
+
+[18:11:07] 
+
+
+
+
+[18:11:07] Extension host agent started.
+[18:11:08] [<unknown>][af2d2a7e][ManagementConnection] New connection established.
+[18:11:08] [<unknown>][1d8aaea6][ExtensionHostConnection] New connection established.
+[18:11:08] Installing extensions...
+[18:11:09] [<unknown>][1d8aaea6][ExtensionHostConnection] <31603> Launched Extension Host Process.
+[18:11:09] [network] #1: https://az764295.vo.msecnd.net/extensions/marketplace.json - error GET read ECONNRESET
+[18:11:10] Installing extension 'ms-ceintl.vscode-language-pack-zh-hans'...
+[18:11:10] Getting Manifest... ms-ceintl.vscode-language-pack-zh-hans
+[18:11:10] Installing extension: ms-ceintl.vscode-language-pack-zh-hans {
+  isMachineScoped: true,
+  isBuiltin: false,
+  installPreReleaseVersion: undefined,
+  installGivenVersion: false,
+  isApplicationScoped: true,
+  installOnlyNewlyAddedFromExtensionPack: true,
+  profileLocation: vr {
+    scheme: 'file',
+    authority: '',
+    path: '/home/thuscc24team04/.vscode-server/extensions/extensions.json',
+    query: '',
+    fragment: '',
+    _formatted: 'file:///home/thuscc24team04/.vscode-server/extensions/extensions.json',
+    _fsPath: '/home/thuscc24team04/.vscode-server/extensions/extensions.json'
+  },
+  productVersion: { version: '1.95.2', date: '2024-11-07T11:07:22.054Z' }
+}
+[18:11:12] Extension signature verification result for ms-ceintl.vscode-language-pack-zh-hans: Success. Executed: true. Duration: 1406ms.
+[18:11:12] Extracted extension to file:///home/thuscc24team04/.vscode-server/extensions/ms-ceintl.vscode-language-pack-zh-hans-1.95.2024103009: ms-ceintl.vscode-language-pack-zh-hans
+[18:11:12] Renamed to /home/thuscc24team04/.vscode-server/extensions/ms-ceintl.vscode-language-pack-zh-hans-1.95.2024103009
+[18:11:13] Adding language packs from the extension ms-ceintl.vscode-language-pack-zh-hans
+[18:11:13] Extension installed successfully: ms-ceintl.vscode-language-pack-zh-hans file:///home/thuscc24team04/.vscode-server/extensions/extensions.json
+[18:11:13] Extension 'ms-ceintl.vscode-language-pack-zh-hans' v1.95.2024103009 was successfully installed.
+[18:11:20] [<unknown>][af2d2a7e][ManagementConnection] The client has disconnected gracefully, so the connection will be disposed.
+[18:11:20] [<unknown>][1d8aaea6][ExtensionHostConnection] <31603> Extension Host Process exited with code: 0, signal: null.
+Cancelling previous shutdown timeout
+[18:11:20] Cancelling previous shutdown timeout
+Last EH closed, waiting before shutting down
+[18:11:20] Last EH closed, waiting before shutting down
+[18:11:23] [<unknown>][26028301][ManagementConnection] New connection established.
+[18:11:23] [<unknown>][fd488c81][ExtensionHostConnection] New connection established.
+[18:11:23] [<unknown>][fd488c81][ExtensionHostConnection] <32145> Launched Extension Host Process.

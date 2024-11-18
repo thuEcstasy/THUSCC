@@ -1,0 +1,6 @@
+Listening on 127.0.0.1:44634
+[2024-11-18 18:58:45] info Disposed of connection to running server.
+looking for token 3744bf23-2a21-4dd1-95e2-6d4ee73c2fb5, got Some("3744bf23-2a21-4dd1-95e2-6d4ee73c2fb5")
+[2024-11-18 18:58:45] info Checking /home/thuscc24team04/.vscode-server/cli/servers/Stable-f1a4fb101478ce6ec82fe9627c43efbf9e98c813/log.txt and /home/thuscc24team04/.vscode-server/cli/servers/Stable-f1a4fb101478ce6ec82fe9627c43efbf9e98c813/pid.txt for a running server...
+[2024-11-18 18:58:45] info Starting server...
+[2024-11-18 18:58:46] info Server started

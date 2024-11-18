@@ -1,0 +1,6 @@
+Listening on 127.0.0.1:33140
+[2024-11-14 19:50:07] info Disposed of connection to running server.
+looking for token 84b3c4b8-05a5-4c2c-8d0a-76c72c2d845e, got Some("84b3c4b8-05a5-4c2c-8d0a-76c72c2d845e")
+[2024-11-14 19:50:07] info Checking /home/thuscc24team04/.vscode-server/cli/servers/Stable-e8653663e8840adaf45af01eab5c627a5af81807/log.txt and /home/thuscc24team04/.vscode-server/cli/servers/Stable-e8653663e8840adaf45af01eab5c627a5af81807/pid.txt for a running server...
+[2024-11-14 19:50:07] info Found running server (pid=31448)
+[2024-11-14 23:44:19] info Disposed of connection to running server.

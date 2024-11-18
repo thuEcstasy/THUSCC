@@ -1,0 +1,171 @@
+2024-11-18 18:58:47.142 [info] 
+
+
+
+
+2024-11-18 18:58:47.203 [info] Extension host agent started.
+2024-11-18 18:58:47.443 [info] [<unknown>][b65588cb][ExtensionHostConnection] New connection established.
+2024-11-18 18:58:47.444 [info] [<unknown>][ecf3f47b][ManagementConnection] New connection established.
+2024-11-18 18:58:48.989 [info] [<unknown>][b65588cb][ExtensionHostConnection] <112801> Launched Extension Host Process.
+2024-11-18 18:58:49.101 [error] [network] #1: https://az764295.vo.msecnd.net/extensions/marketplace.json - error GET read ECONNRESET
+2024-11-18 18:58:54.326 [info] Getting Manifest... github.copilot-chat
+2024-11-18 18:58:54.357 [info] Installing extension: github.copilot-chat {"productVersion":{"version":"1.95.3","date":"2024-11-13T14:50:04.152Z"},"pinned":false,"operation":3,"isApplicationScoped":false,"donotVerifySignature":false,"context":{"clientTargetPlatform":"win32-x64"},"installOnlyNewlyAddedFromExtensionPack":true,"profileLocation":{"$mid":1,"fsPath":"/home/thuscc24team04/.vscode-server/extensions/extensions.json","external":"file:///home/thuscc24team04/.vscode-server/extensions/extensions.json","path":"/home/thuscc24team04/.vscode-server/extensions/extensions.json","scheme":"file"}}
+2024-11-18 18:58:56.176 [info] Extension signature verification result for github.copilot-chat: Success. Executed: true. Duration: 950ms.
+2024-11-18 18:58:57.048 [info] Extracted extension to file:///home/thuscc24team04/.vscode-server/extensions/github.copilot-chat-0.22.3: github.copilot-chat
+2024-11-18 18:58:57.057 [info] Renamed to /home/thuscc24team04/.vscode-server/extensions/github.copilot-chat-0.22.3
+2024-11-18 18:58:57.085 [info] Marked extension as uninstalled github.copilot-chat-0.22.2
+2024-11-18 18:58:57.091 [info] Extension installed successfully: github.copilot-chat file:///home/thuscc24team04/.vscode-server/extensions/extensions.json
+2024-11-18 19:03:47.297 [info] New EH opened, aborting shutdown
+2024-11-18 19:08:19.008 [info] [<unknown>][22ac3c18][ExtensionHostConnection] New connection established.
+2024-11-18 19:08:19.009 [info] [<unknown>][2148787e][ManagementConnection] New connection established.
+2024-11-18 19:08:19.020 [info] [<unknown>][22ac3c18][ExtensionHostConnection] <7387> Launched Extension Host Process.
+2024-11-18 19:08:19.131 [error] [network] #8: https://az764295.vo.msecnd.net/extensions/marketplace.json - error GET read ECONNRESET
+2024-11-18 19:08:33.732 [info] [<unknown>][2148787e][ManagementConnection] The client has disconnected gracefully, so the connection will be disposed.
+2024-11-18 19:08:33.885 [info] [<unknown>][22ac3c18][ExtensionHostConnection] <7387> Extension Host Process exited with code: 0, signal: null.
+2024-11-18 19:08:36.189 [info] [<unknown>][363e5df0][ExtensionHostConnection] New connection established.
+2024-11-18 19:08:36.200 [info] [<unknown>][363e5df0][ExtensionHostConnection] <8140> Launched Extension Host Process.
+2024-11-18 19:08:36.202 [info] [<unknown>][c056897b][ManagementConnection] New connection established.
+2024-11-18 19:16:51.765 [info] [<unknown>][363e5df0][ExtensionHostConnection] <8140><stderr> getTestableNode: Unexpected error Error: Unexpected type, expected 'must have seen identifier for symbol kind 'function' (lang: cpp)'
+    at se (/home/thuscc24team04/.vscode-server/extensions/github.copilot-chat-0.22.3/dist/worker2.js:641:2521)
+    at Object.Ke (/home/thuscc24team04/.vscode-server/extensions/github.copilot-chat-0.22.3/dist/worker2.js:641:2972)
+    at async MessagePort.<anonymous> (/home/thuscc24team04/.vscode-server/extensions/github.copilot-chat-0.22.3/dist/worker2.js:641:12872)
+
+2024-11-18 19:16:52.397 [info] [<unknown>][363e5df0][ExtensionHostConnection] <8140><stderr> getTestableNode: Unexpected error Error: Unexpected type, expected 'must have seen identifier for symbol kind 'function' (lang: cpp)'
+    at se (/home/thuscc24team04/.vscode-server/extensions/github.copilot-chat-0.22.3/dist/worker2.js:641:2521)
+    at Object.Ke (/home/thuscc24team04/.vscode-server/extensions/github.copilot-chat-0.22.3/dist/worker2.js:641:2972)
+    at async MessagePort.<anonymous> (/home/thuscc24team04/.vscode-server/extensions/github.copilot-chat-0.22.3/dist/worker2.js:641:12872)
+
+2024-11-18 19:16:52.897 [info] [<unknown>][363e5df0][ExtensionHostConnection] <8140><stderr> getTestableNode: Unexpected error Error: Unexpected type, expected 'must have seen identifier for symbol kind 'function' (lang: cpp)'
+    at se (/home/thuscc24team04/.vscode-server/extensions/github.copilot-chat-0.22.3/dist/worker2.js:641:2521)
+    at Object.Ke (/home/thuscc24team04/.vscode-server/extensions/github.copilot-chat-0.22.3/dist/worker2.js:641:2972)
+    at async MessagePort.<anonymous> (/home/thuscc24team04/.vscode-server/extensions/github.copilot-chat-0.22.3/dist/worker2.js:641:12872)
+
+2024-11-18 19:16:54.149 [info] [<unknown>][363e5df0][ExtensionHostConnection] <8140><stderr> getTestableNode: Unexpected error Error: Unexpected type, expected 'must have seen identifier for symbol kind 'function' (lang: cpp)'
+    at se (/home/thuscc24team04/.vscode-server/extensions/github.copilot-chat-0.22.3/dist/worker2.js:641:2521)
+    at Object.Ke (/home/thuscc24team04/.vscode-server/extensions/github.copilot-chat-0.22.3/dist/worker2.js:641:2972)
+    at async MessagePort.<anonymous> (/home/thuscc24team04/.vscode-server/extensions/github.copilot-chat-0.22.3/dist/worker2.js:641:12872)
+
+2024-11-18 19:16:55.316 [info] [<unknown>][363e5df0][ExtensionHostConnection] <8140><stderr> getTestableNode: Unexpected error Error: Unexpected type, expected 'must have seen identifier for symbol kind 'function' (lang: cpp)'
+    at se (/home/thuscc24team04/.vscode-server/extensions/github.copilot-chat-0.22.3/dist/worker2.js:641:2521)
+    at Object.Ke (/home/thuscc24team04/.vscode-server/extensions/github.copilot-chat-0.22.3/dist/worker2.js:641:2972)
+    at async MessagePort.<anonymous> (/home/thuscc24team04/.vscode-server/extensions/github.copilot-chat-0.22.3/dist/worker2.js:641:12872)
+
+2024-11-18 19:16:55.949 [info] [<unknown>][363e5df0][ExtensionHostConnection] <8140><stderr> getTestableNode: Unexpected error Error: Unexpected type, expected 'must have seen identifier for symbol kind 'function' (lang: cpp)'
+    at se (/home/thuscc24team04/.vscode-server/extensions/github.copilot-chat-0.22.3/dist/worker2.js:641:2521)
+    at Object.Ke (/home/thuscc24team04/.vscode-server/extensions/github.copilot-chat-0.22.3/dist/worker2.js:641:2972)
+    at async MessagePort.<anonymous> (/home/thuscc24team04/.vscode-server/extensions/github.copilot-chat-0.22.3/dist/worker2.js:641:12872)
+
+2024-11-18 19:16:56.642 [info] [<unknown>][363e5df0][ExtensionHostConnection] <8140><stderr> getTestableNode: Unexpected error Error: Unexpected type, expected 'must have seen identifier for symbol kind 'function' (lang: cpp)'
+    at se (/home/thuscc24team04/.vscode-server/extensions/github.copilot-chat-0.22.3/dist/worker2.js:641:2521)
+    at Object.Ke (/home/thuscc24team04/.vscode-server/extensions/github.copilot-chat-0.22.3/dist/worker2.js:641:2972)
+    at async MessagePort.<anonymous> (/home/thuscc24team04/.vscode-server/extensions/github.copilot-chat-0.22.3/dist/worker2.js:641:12872)
+
+2024-11-18 19:16:57.219 [info] [<unknown>][363e5df0][ExtensionHostConnection] <8140><stderr> getTestableNode: Unexpected error Error: Unexpected type, expected 'must have seen identifier for symbol kind 'function' (lang: cpp)'
+    at se (/home/thuscc24team04/.vscode-server/extensions/github.copilot-chat-0.22.3/dist/worker2.js:641:2521)
+    at Object.Ke (/home/thuscc24team04/.vscode-server/extensions/github.copilot-chat-0.22.3/dist/worker2.js:641:2972)
+    at async MessagePort.<anonymous> (/home/thuscc24team04/.vscode-server/extensions/github.copilot-chat-0.22.3/dist/worker2.js:641:12872)
+
+2024-11-18 19:16:59.528 [info] [<unknown>][363e5df0][ExtensionHostConnection] <8140><stderr> getTestableNode: Unexpected error Error: Unexpected type, expected 'must have seen identifier for symbol kind 'function' (lang: cpp)'
+    at se (/home/thuscc24team04/.vscode-server/extensions/github.copilot-chat-0.22.3/dist/worker2.js:641:2521)
+    at Object.Ke (/home/thuscc24team04/.vscode-server/extensions/github.copilot-chat-0.22.3/dist/worker2.js:641:2972)
+    at async MessagePort.<anonymous> (/home/thuscc24team04/.vscode-server/extensions/github.copilot-chat-0.22.3/dist/worker2.js:641:12872)
+
+2024-11-18 19:17:01.202 [info] [<unknown>][363e5df0][ExtensionHostConnection] <8140><stderr> getTestableNode: Unexpected error Error: Unexpected type, expected 'must have seen identifier for symbol kind 'function' (lang: cpp)'
+    at se (/home/thuscc24team04/.vscode-server/extensions/github.copilot-chat-0.22.3/dist/worker2.js:641:2521)
+    at Object.Ke (/home/thuscc24team04/.vscode-server/extensions/github.copilot-chat-0.22.3/dist/worker2.js:641:2972)
+    at async MessagePort.<anonymous> (/home/thuscc24team04/.vscode-server/extensions/github.copilot-chat-0.22.3/dist/worker2.js:641:12872)
+
+2024-11-18 19:17:02.693 [info] [<unknown>][363e5df0][ExtensionHostConnection] <8140><stderr> getTestableNode: Unexpected error Error: Unexpected type, expected 'must have seen identifier for symbol kind 'function' (lang: cpp)'
+    at se (/home/thuscc24team04/.vscode-server/extensions/github.copilot-chat-0.22.3/dist/worker2.js:641:2521)
+    at Object.Ke (/home/thuscc24team04/.vscode-server/extensions/github.copilot-chat-0.22.3/dist/worker2.js:641:2972)
+    at async MessagePort.<anonymous> (/home/thuscc24team04/.vscode-server/extensions/github.copilot-chat-0.22.3/dist/worker2.js:641:12872)
+
+2024-11-18 19:17:03.965 [info] [<unknown>][363e5df0][ExtensionHostConnection] <8140><stderr> getTestableNode: Unexpected error Error: Unexpected type, expected 'must have seen identifier for symbol kind 'function' (lang: cpp)'
+    at se (/home/thuscc24team04/.vscode-server/extensions/github.copilot-chat-0.22.3/dist/worker2.js:641:2521)
+    at Object.Ke (/home/thuscc24team04/.vscode-server/extensions/github.copilot-chat-0.22.3/dist/worker2.js:641:2972)
+    at async MessagePort.<anonymous> (/home/thuscc24team04/.vscode-server/extensions/github.copilot-chat-0.22.3/dist/worker2.js:641:12872)
+
+2024-11-18 19:17:05.861 [info] [<unknown>][363e5df0][ExtensionHostConnection] <8140><stderr> getTestableNode: Unexpected error Error: Unexpected type, expected 'must have seen identifier for symbol kind 'function' (lang: cpp)'
+    at se (/home/thuscc24team04/.vscode-server/extensions/github.copilot-chat-0.22.3/dist/worker2.js:641:2521)
+    at Object.Ke (/home/thuscc24team04/.vscode-server/extensions/github.copilot-chat-0.22.3/dist/worker2.js:641:2972)
+    at async MessagePort.<anonymous> (/home/thuscc24team04/.vscode-server/extensions/github.copilot-chat-0.22.3/dist/worker2.js:641:12872)
+
+2024-11-18 19:17:08.948 [info] [<unknown>][363e5df0][ExtensionHostConnection] <8140><stderr> getTestableNode: Unexpected error Error: Unexpected type, expected 'must have seen identifier for symbol kind 'function' (lang: cpp)'
+    at se (/home/thuscc24team04/.vscode-server/extensions/github.copilot-chat-0.22.3/dist/worker2.js:641:2521)
+    at Object.Ke (/home/thuscc24team04/.vscode-server/extensions/github.copilot-chat-0.22.3/dist/worker2.js:641:2972)
+    at async MessagePort.<anonymous> (/home/thuscc24team04/.vscode-server/extensions/github.copilot-chat-0.22.3/dist/worker2.js:641:12872)
+
+2024-11-18 19:17:09.329 [info] [<unknown>][363e5df0][ExtensionHostConnection] <8140><stderr> getTestableNode: Unexpected error Error: Unexpected type, expected 'must have seen identifier for symbol kind 'function' (lang: cpp)'
+    at se (/home/thuscc24team04/.vscode-server/extensions/github.copilot-chat-0.22.3/dist/worker2.js:641:2521)
+    at Object.Ke (/home/thuscc24team04/.vscode-server/extensions/github.copilot-chat-0.22.3/dist/worker2.js:641:2972)
+    at async MessagePort.<anonymous> (/home/thuscc24team04/.vscode-server/extensions/github.copilot-chat-0.22.3/dist/worker2.js:641:12872)
+
+2024-11-18 19:17:09.665 [info] [<unknown>][363e5df0][ExtensionHostConnection] <8140><stderr> getTestableNode: Unexpected error Error: Unexpected type, expected 'must have seen identifier for symbol kind 'function' (lang: cpp)'
+    at se (/home/thuscc24team04/.vscode-server/extensions/github.copilot-chat-0.22.3/dist/worker2.js:641:2521)
+    at Object.Ke (/home/thuscc24team04/.vscode-server/extensions/github.copilot-chat-0.22.3/dist/worker2.js:641:2972)
+    at async MessagePort.<anonymous> (/home/thuscc24team04/.vscode-server/extensions/github.copilot-chat-0.22.3/dist/worker2.js:641:12872)
+
+2024-11-18 19:17:10.313 [info] [<unknown>][363e5df0][ExtensionHostConnection] <8140><stderr> getTestableNode: Unexpected error Error: Unexpected type, expected 'must have seen identifier for symbol kind 'function' (lang: cpp)'
+    at se (/home/thuscc24team04/.vscode-server/extensions/github.copilot-chat-0.22.3/dist/worker2.js:641:2521)
+    at Object.Ke (/home/thuscc24team04/.vscode-server/extensions/github.copilot-chat-0.22.3/dist/worker2.js:641:2972)
+    at async MessagePort.<anonymous> (/home/thuscc24team04/.vscode-server/extensions/github.copilot-chat-0.22.3/dist/worker2.js:641:12872)
+
+2024-11-18 19:22:39.567 [info] [<unknown>][af85e60a][ExtensionHostConnection] New connection established.
+2024-11-18 19:22:39.578 [info] [<unknown>][ac6f06c1][ManagementConnection] New connection established.
+2024-11-18 19:22:39.599 [info] [<unknown>][af85e60a][ExtensionHostConnection] <24397> Launched Extension Host Process.
+2024-11-18 19:22:39.731 [error] [network] #9: https://az764295.vo.msecnd.net/extensions/marketplace.json - error GET read ECONNRESET
+2024-11-18 19:22:45.103 [info] [<unknown>][ac6f06c1][ManagementConnection] The client has disconnected gracefully, so the connection will be disposed.
+2024-11-18 19:22:45.287 [info] [<unknown>][af85e60a][ExtensionHostConnection] <24397> Extension Host Process exited with code: 0, signal: null.
+2024-11-18 19:22:47.398 [info] [<unknown>][d85df4af][ExtensionHostConnection] New connection established.
+2024-11-18 19:22:47.405 [info] [<unknown>][d85df4af][ExtensionHostConnection] <24935> Launched Extension Host Process.
+2024-11-18 19:22:47.412 [info] [<unknown>][47829a71][ManagementConnection] New connection established.
+2024-11-18 19:22:47.994 [warning] RequestStore#acceptReply was called without receiving a matching request 157
+2024-11-18 19:22:47.995 [warning] RequestStore#acceptReply was called without receiving a matching request 158
+2024-11-18 19:22:47.997 [warning] RequestStore#acceptReply was called without receiving a matching request 159
+2024-11-18 19:22:47.997 [warning] RequestStore#acceptReply was called without receiving a matching request 160
+2024-11-18 19:22:47.997 [warning] RequestStore#acceptReply was called without receiving a matching request 161
+2024-11-18 19:22:47.997 [warning] RequestStore#acceptReply was called without receiving a matching request 162
+2024-11-18 19:22:47.997 [warning] RequestStore#acceptReply was called without receiving a matching request 163
+2024-11-18 19:22:47.997 [warning] RequestStore#acceptReply was called without receiving a matching request 164
+2024-11-18 19:22:47.997 [warning] RequestStore#acceptReply was called without receiving a matching request 165
+2024-11-18 19:22:47.998 [warning] RequestStore#acceptReply was called without receiving a matching request 166
+2024-11-18 19:22:47.998 [warning] RequestStore#acceptReply was called without receiving a matching request 167
+2024-11-18 19:22:47.998 [warning] RequestStore#acceptReply was called without receiving a matching request 168
+2024-11-18 19:22:48.156 [warning] RequestStore#acceptReply was called without receiving a matching request 169
+2024-11-18 19:22:48.157 [warning] RequestStore#acceptReply was called without receiving a matching request 170
+2024-11-18 19:22:48.158 [warning] RequestStore#acceptReply was called without receiving a matching request 171
+2024-11-18 19:22:48.158 [warning] RequestStore#acceptReply was called without receiving a matching request 172
+2024-11-18 19:22:48.158 [warning] RequestStore#acceptReply was called without receiving a matching request 173
+2024-11-18 19:22:48.159 [warning] RequestStore#acceptReply was called without receiving a matching request 174
+2024-11-18 19:22:48.159 [warning] RequestStore#acceptReply was called without receiving a matching request 175
+2024-11-18 19:22:48.159 [warning] RequestStore#acceptReply was called without receiving a matching request 176
+2024-11-18 19:22:48.159 [warning] RequestStore#acceptReply was called without receiving a matching request 177
+2024-11-18 19:22:48.159 [warning] RequestStore#acceptReply was called without receiving a matching request 178
+2024-11-18 19:22:48.160 [warning] RequestStore#acceptReply was called without receiving a matching request 179
+2024-11-18 19:22:48.160 [warning] RequestStore#acceptReply was called without receiving a matching request 180
+2024-11-18 19:22:49.825 [warning] RequestStore#acceptReply was called without receiving a matching request 181
+2024-11-18 19:22:49.825 [warning] RequestStore#acceptReply was called without receiving a matching request 182
+2024-11-18 19:22:49.825 [warning] RequestStore#acceptReply was called without receiving a matching request 183
+2024-11-18 19:22:49.827 [warning] RequestStore#acceptReply was called without receiving a matching request 184
+2024-11-18 19:22:49.827 [warning] RequestStore#acceptReply was called without receiving a matching request 185
+2024-11-18 19:22:49.827 [warning] RequestStore#acceptReply was called without receiving a matching request 186
+2024-11-18 19:22:49.827 [warning] RequestStore#acceptReply was called without receiving a matching request 187
+2024-11-18 19:22:49.828 [warning] RequestStore#acceptReply was called without receiving a matching request 188
+2024-11-18 19:22:49.828 [warning] RequestStore#acceptReply was called without receiving a matching request 189
+2024-11-18 19:22:49.828 [warning] RequestStore#acceptReply was called without receiving a matching request 190
+2024-11-18 19:22:49.828 [warning] RequestStore#acceptReply was called without receiving a matching request 191
+2024-11-18 19:22:49.828 [warning] RequestStore#acceptReply was called without receiving a matching request 192
+2024-11-18 19:24:20.385 [warning] RequestStore#acceptReply was called without receiving a matching request 193
+2024-11-18 19:24:20.385 [warning] RequestStore#acceptReply was called without receiving a matching request 194
+2024-11-18 19:24:20.385 [warning] RequestStore#acceptReply was called without receiving a matching request 195
+2024-11-18 19:24:20.387 [warning] RequestStore#acceptReply was called without receiving a matching request 196
+2024-11-18 19:24:20.387 [warning] RequestStore#acceptReply was called without receiving a matching request 197
+2024-11-18 19:24:20.387 [warning] RequestStore#acceptReply was called without receiving a matching request 198
+2024-11-18 19:24:20.387 [warning] RequestStore#acceptReply was called without receiving a matching request 199
+2024-11-18 19:24:20.388 [warning] RequestStore#acceptReply was called without receiving a matching request 200
+2024-11-18 19:24:20.388 [warning] RequestStore#acceptReply was called without receiving a matching request 201
+2024-11-18 19:24:20.388 [warning] RequestStore#acceptReply was called without receiving a matching request 202
+2024-11-18 19:24:20.388 [warning] RequestStore#acceptReply was called without receiving a matching request 203
+2024-11-18 19:24:20.388 [warning] RequestStore#acceptReply was called without receiving a matching request 204
+2024-11-18 19:28:53.220 [warning] [File Watcher (node.js)] Watcher shutdown because watched path got deleted
+2024-11-18 19:28:53.222 [warning] [File Watcher (node.js)] Watcher shutdown because watched path got deleted

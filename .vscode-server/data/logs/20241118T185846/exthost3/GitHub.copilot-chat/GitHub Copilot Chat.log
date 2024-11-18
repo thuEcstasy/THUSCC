@@ -1,0 +1,28 @@
+2024-11-18 19:08:38.122 [info] Can't use the Electron fetcher in this environment.
+2024-11-18 19:08:38.122 [info] Using the Helix fetcher.
+2024-11-18 19:08:38.122 [info] Initializing Git extension service.
+2024-11-18 19:08:38.278 [info] Successfully activated the vscode.git extension.
+2024-11-18 19:08:38.278 [info] Enablement state of the vscode.git extension: true.
+2024-11-18 19:08:38.278 [info] Successfully registered Git commit message provider.
+2024-11-18 19:08:41.322 [info] Logged in as sankinsank
+2024-11-18 19:08:41.415 [error] Error: error:0480006C:PEM routines::no start line
+    at new X509Certificate (node:internal/crypto/x509:119:21)
+    at /home/thuscc24team04/.vscode-server/extensions/github.copilot-chat-0.22.3/dist/extension.js:784:7894
+    at Array.filter (<anonymous>)
+    at Tw.removeExpiredCertificates (/home/thuscc24team04/.vscode-server/extensions/github.copilot-chat-0.22.3/dist/extension.js:784:7873)
+    at Tw.getAllRootCAs (/home/thuscc24team04/.vscode-server/extensions/github.copilot-chat-0.22.3/dist/extension.js:784:7708)
+    at Cw.createSecureContext (/home/thuscc24team04/.vscode-server/extensions/github.copilot-chat-0.22.3/dist/extension.js:784:9635)
+    at Cw.applyToRequestOptions (/home/thuscc24team04/.vscode-server/extensions/github.copilot-chat-0.22.3/dist/extension.js:784:9881)
+    at Ey.fetch (/home/thuscc24team04/.vscode-server/extensions/github.copilot-chat-0.22.3/dist/extension.js:785:2148)
+    at iE.fetchCopilotToken (/home/thuscc24team04/.vscode-server/extensions/github.copilot-chat-0.22.3/dist/extension.js:282:35579)
+    at iE.authFromGitHubToken (/home/thuscc24team04/.vscode-server/extensions/github.copilot-chat-0.22.3/dist/extension.js:282:33288)
+    at iE._auth (/home/thuscc24team04/.vscode-server/extensions/github.copilot-chat-0.22.3/dist/extension.js:613:2720): Failed to parse certificate # ACCVRAIZ1
+
+2024-11-18 19:08:41.415 [info] Removed 12 expired certificates
+2024-11-18 19:08:42.967 [info] Got Copilot token for sankinsank
+2024-11-18 19:08:43.292 [info] copilot token chat_enabled: true, sku: free_educational
+2024-11-18 19:08:43.292 [info] GitHub.vscode-pull-request-github extension is not yet activated.
+2024-11-18 19:08:43.310 [info] Registering default platform agent...
+2024-11-18 19:08:44.158 [info] Fetched model metadata in 1175ms 3b948352-4d18-4f1b-bdd4-487a606dfb29
+2024-11-18 19:08:44.690 [info] activationBlocker from 'languageModelAccess' took for 5703ms
+2024-11-18 19:23:44.847 [info] Fetched model metadata in 44ms af701696-9934-4db6-b77b-f46d2581e01a

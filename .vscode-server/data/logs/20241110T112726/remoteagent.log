@@ -1,0 +1,71 @@
+2024-11-10 11:27:27.007 [info] 
+
+
+
+
+2024-11-10 11:27:27.025 [info] Extension host agent started.
+2024-11-10 11:27:27.119 [info] [<unknown>][0a5df7da][ManagementConnection] New connection established.
+2024-11-10 11:27:27.166 [info] [<unknown>][f273e509][ExtensionHostConnection] New connection established.
+2024-11-10 11:27:28.622 [info] [<unknown>][f273e509][ExtensionHostConnection] <16258> Launched Extension Host Process.
+2024-11-10 11:27:28.733 [error] [network] #1: https://az764295.vo.msecnd.net/extensions/marketplace.json - error GET read ECONNRESET
+2024-11-10 11:32:27.026 [info] New EH opened, aborting shutdown
+2024-11-10 11:51:47.452 [info] [<unknown>][0a5df7da][ManagementConnection] The client has disconnected gracefully, so the connection will be disposed.
+2024-11-10 11:51:47.531 [info] [<unknown>][f273e509][ExtensionHostConnection] <16258> Extension Host Process exited with code: 0, signal: null.
+2024-11-10 11:51:47.532 [info] Last EH closed, waiting before shutting down
+2024-11-10 11:51:50.632 [info] [<unknown>][45a0a2da][ManagementConnection] New connection established.
+2024-11-10 11:51:50.663 [info] [<unknown>][ea695f9d][ExtensionHostConnection] New connection established.
+2024-11-10 11:51:50.670 [info] [<unknown>][ea695f9d][ExtensionHostConnection] <32321> Launched Extension Host Process.
+2024-11-10 11:51:50.889 [error] [network] #3: https://az764295.vo.msecnd.net/extensions/marketplace.json - error GET read ECONNRESET
+2024-11-10 11:52:44.525 [error] [File Watcher] Inotify limit reached (ENOSPC) (path: /home)
+2024-11-10 11:52:51.749 [info] [<unknown>][45a0a2da][ManagementConnection] The client has disconnected gracefully, so the connection will be disposed.
+2024-11-10 11:52:51.810 [info] [<unknown>][ea695f9d][ExtensionHostConnection] <32321> Extension Host Process exited with code: 0, signal: null.
+2024-11-10 11:52:51.810 [info] Cancelling previous shutdown timeout
+2024-11-10 11:52:51.810 [info] Last EH closed, waiting before shutting down
+2024-11-10 11:52:54.836 [info] [<unknown>][bac3725a][ManagementConnection] New connection established.
+2024-11-10 11:52:54.869 [info] [<unknown>][ff517127][ExtensionHostConnection] New connection established.
+2024-11-10 11:52:54.877 [info] [<unknown>][ff517127][ExtensionHostConnection] <33107> Launched Extension Host Process.
+2024-11-10 11:52:58.721 [error] CodeExpectedError: Could not find pty 13 on pty host
+    at I.W (file:///home/thuscc24team04/.vscode-server/cli/servers/Stable-e8653663e8840adaf45af01eab5c627a5af81807/server/out/vs/platform/terminal/node/ptyHostMain.js:48:12233)
+    at I.updateTitle (file:///home/thuscc24team04/.vscode-server/cli/servers/Stable-e8653663e8840adaf45af01eab5c627a5af81807/server/out/vs/platform/terminal/node/ptyHostMain.js:48:7722)
+    at N.s.<computed> (file:///home/thuscc24team04/.vscode-server/cli/servers/Stable-e8653663e8840adaf45af01eab5c627a5af81807/server/out/vs/platform/terminal/node/ptyHostMain.js:48:2962)
+    at Object.call (file:///home/thuscc24team04/.vscode-server/cli/servers/Stable-e8653663e8840adaf45af01eab5c627a5af81807/server/out/vs/platform/terminal/node/ptyHostMain.js:31:4203)
+    at Jc.s (file:///home/thuscc24team04/.vscode-server/cli/servers/Stable-e8653663e8840adaf45af01eab5c627a5af81807/server/out/vs/platform/terminal/node/ptyHostMain.js:29:78968)
+    at Jc.q (file:///home/thuscc24team04/.vscode-server/cli/servers/Stable-e8653663e8840adaf45af01eab5c627a5af81807/server/out/vs/platform/terminal/node/ptyHostMain.js:29:78491)
+    at hs.value (file:///home/thuscc24team04/.vscode-server/cli/servers/Stable-e8653663e8840adaf45af01eab5c627a5af81807/server/out/vs/platform/terminal/node/ptyHostMain.js:29:77893)
+    at C.B (file:///home/thuscc24team04/.vscode-server/cli/servers/Stable-e8653663e8840adaf45af01eab5c627a5af81807/server/out/vs/platform/terminal/node/ptyHostMain.js:29:746)
+    at C.fire (file:///home/thuscc24team04/.vscode-server/cli/servers/Stable-e8653663e8840adaf45af01eab5c627a5af81807/server/out/vs/platform/terminal/node/ptyHostMain.js:29:964)
+    at process.w (file:///home/thuscc24team04/.vscode-server/cli/servers/Stable-e8653663e8840adaf45af01eab5c627a5af81807/server/out/vs/platform/terminal/node/ptyHostMain.js:24:29137)
+    at process.emit (node:events:519:28)
+    at emit (node:internal/child_process:951:14)
+    at process.processTicksAndRejections (node:internal/process/task_queues:83:21)
+2024-11-10 11:52:58.725 [error] CodeExpectedError: Could not find pty 13 on pty host
+    at I.W (file:///home/thuscc24team04/.vscode-server/cli/servers/Stable-e8653663e8840adaf45af01eab5c627a5af81807/server/out/vs/platform/terminal/node/ptyHostMain.js:48:12233)
+    at I.updateIcon (file:///home/thuscc24team04/.vscode-server/cli/servers/Stable-e8653663e8840adaf45af01eab5c627a5af81807/server/out/vs/platform/terminal/node/ptyHostMain.js:48:7772)
+    at N.s.<computed> (file:///home/thuscc24team04/.vscode-server/cli/servers/Stable-e8653663e8840adaf45af01eab5c627a5af81807/server/out/vs/platform/terminal/node/ptyHostMain.js:48:2962)
+    at Object.call (file:///home/thuscc24team04/.vscode-server/cli/servers/Stable-e8653663e8840adaf45af01eab5c627a5af81807/server/out/vs/platform/terminal/node/ptyHostMain.js:31:4203)
+    at Jc.s (file:///home/thuscc24team04/.vscode-server/cli/servers/Stable-e8653663e8840adaf45af01eab5c627a5af81807/server/out/vs/platform/terminal/node/ptyHostMain.js:29:78968)
+    at Jc.q (file:///home/thuscc24team04/.vscode-server/cli/servers/Stable-e8653663e8840adaf45af01eab5c627a5af81807/server/out/vs/platform/terminal/node/ptyHostMain.js:29:78491)
+    at hs.value (file:///home/thuscc24team04/.vscode-server/cli/servers/Stable-e8653663e8840adaf45af01eab5c627a5af81807/server/out/vs/platform/terminal/node/ptyHostMain.js:29:77893)
+    at C.B (file:///home/thuscc24team04/.vscode-server/cli/servers/Stable-e8653663e8840adaf45af01eab5c627a5af81807/server/out/vs/platform/terminal/node/ptyHostMain.js:29:746)
+    at C.fire (file:///home/thuscc24team04/.vscode-server/cli/servers/Stable-e8653663e8840adaf45af01eab5c627a5af81807/server/out/vs/platform/terminal/node/ptyHostMain.js:29:964)
+    at process.w (file:///home/thuscc24team04/.vscode-server/cli/servers/Stable-e8653663e8840adaf45af01eab5c627a5af81807/server/out/vs/platform/terminal/node/ptyHostMain.js:24:29137)
+    at process.emit (node:events:519:28)
+    at emit (node:internal/child_process:951:14)
+    at process.processTicksAndRejections (node:internal/process/task_queues:83:21)
+2024-11-10 11:57:51.813 [info] New EH opened, aborting shutdown
+2024-11-10 11:57:51.817 [error] Error: Unexpected SIGPIPE
+    at process.<anonymous> (file:///home/thuscc24team04/.vscode-server/cli/servers/Stable-e8653663e8840adaf45af01eab5c627a5af81807/server/out/server-main.js:183:1060)
+    at process.emit (node:events:531:35)
+2024-11-10 11:59:48.328 [info] [<unknown>][bac3725a][ManagementConnection] The client has disconnected gracefully, so the connection will be disposed.
+2024-11-10 11:59:48.405 [info] [<unknown>][ff517127][ExtensionHostConnection] <33107> Extension Host Process exited with code: 0, signal: null.
+2024-11-10 11:59:48.406 [info] Last EH closed, waiting before shutting down
+2024-11-10 12:01:43.698 [info] [<unknown>][9c8e2aea][ManagementConnection] New connection established.
+2024-11-10 12:01:43.732 [info] [<unknown>][a85b68b8][ExtensionHostConnection] New connection established.
+2024-11-10 12:01:43.741 [info] [<unknown>][a85b68b8][ExtensionHostConnection] <36976> Launched Extension Host Process.
+2024-11-10 12:01:43.920 [error] [network] #4: https://az764295.vo.msecnd.net/extensions/marketplace.json - error GET read ECONNRESET
+2024-11-10 12:04:48.499 [info] New EH opened, aborting shutdown
+2024-11-10 12:23:53.293 [info] [<unknown>][9c8e2aea][ManagementConnection] The client has disconnected, will wait for reconnection 3h before disposing...
+2024-11-10 15:23:38.528 [info] [<unknown>][a85b68b8][ExtensionHostConnection] <36976> Extension Host Process exited with code: 0, signal: null.
+2024-11-10 15:23:38.530 [info] Last EH closed, waiting before shutting down
+2024-11-10 15:24:01.171 [info] [<unknown>][9c8e2aea][ManagementConnection] The reconnection grace time of 3h has expired, so the connection will be disposed.
+2024-11-10 15:28:38.531 [info] Last EH closed, shutting down

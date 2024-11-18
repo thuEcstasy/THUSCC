@@ -1,0 +1,48 @@
+2024-11-18 13:04:07.243 [info] Can't use the Electron fetcher in this environment.
+2024-11-18 13:04:07.243 [info] Using the Helix fetcher.
+2024-11-18 13:04:07.243 [info] Initializing Git extension service.
+2024-11-18 13:04:07.243 [info] Successfully activated the vscode.git extension.
+2024-11-18 13:04:07.243 [info] Enablement state of the vscode.git extension: true.
+2024-11-18 13:04:07.243 [info] Successfully registered Git commit message provider.
+2024-11-18 13:04:10.019 [info] Logged in as sankinsank
+2024-11-18 13:04:10.141 [error] Error: error:0480006C:PEM routines::no start line
+    at new X509Certificate (node:internal/crypto/x509:119:21)
+    at /home/thuscc24team04/.vscode-server/extensions/github.copilot-chat-0.22.2/dist/extension.js:784:7894
+    at Array.filter (<anonymous>)
+    at Tw.removeExpiredCertificates (/home/thuscc24team04/.vscode-server/extensions/github.copilot-chat-0.22.2/dist/extension.js:784:7873)
+    at Tw.getAllRootCAs (/home/thuscc24team04/.vscode-server/extensions/github.copilot-chat-0.22.2/dist/extension.js:784:7708)
+    at Cw.createSecureContext (/home/thuscc24team04/.vscode-server/extensions/github.copilot-chat-0.22.2/dist/extension.js:784:9635)
+    at Cw.applyToRequestOptions (/home/thuscc24team04/.vscode-server/extensions/github.copilot-chat-0.22.2/dist/extension.js:784:9881)
+    at Ey.fetch (/home/thuscc24team04/.vscode-server/extensions/github.copilot-chat-0.22.2/dist/extension.js:785:2148)
+    at iE.fetchCopilotToken (/home/thuscc24team04/.vscode-server/extensions/github.copilot-chat-0.22.2/dist/extension.js:282:35579)
+    at iE.authFromGitHubToken (/home/thuscc24team04/.vscode-server/extensions/github.copilot-chat-0.22.2/dist/extension.js:282:33288)
+    at iE._auth (/home/thuscc24team04/.vscode-server/extensions/github.copilot-chat-0.22.2/dist/extension.js:613:2720): Failed to parse certificate # ACCVRAIZ1
+
+2024-11-18 13:04:10.141 [info] Removed 12 expired certificates
+2024-11-18 13:04:11.697 [info] Got Copilot token for sankinsank
+2024-11-18 13:04:12.008 [info] copilot token chat_enabled: true, sku: free_educational
+2024-11-18 13:04:12.008 [info] GitHub.vscode-pull-request-github extension is not yet activated.
+2024-11-18 13:04:12.026 [info] Registering default platform agent...
+2024-11-18 13:04:12.878 [info] Fetched model metadata in 1163ms 725b0482-808e-475a-97fa-9fd2a115c199
+2024-11-18 13:04:13.381 [info] activationBlocker from 'languageModelAccess' took for 5874ms
+2024-11-18 13:04:22.572 [info] message 0 returned. finish reason: [stop]
+2024-11-18 13:04:22.575 [info] request done: requestId: [f0c5f834-08f6-4446-b4f2-1c6d32b0557d] model deployment ID: []
+2024-11-18 13:04:24.925 [info] message 0 returned. finish reason: [stop]
+2024-11-18 13:04:24.926 [info] request done: requestId: [844e53c7-cf34-47c3-b387-4f0c22103338] model deployment ID: []
+2024-11-18 13:04:25.496 [info] message 0 returned. finish reason: [stop]
+2024-11-18 13:04:25.497 [info] request done: requestId: [26dacb2a-d05c-460c-b466-8abc3f5ff2a1] model deployment ID: []
+2024-11-18 13:04:25.574 [info] message 0 returned. finish reason: [stop]
+2024-11-18 13:04:25.576 [info] request done: requestId: [cef6c7f9-3f05-4105-9cd6-6b9c404804ba] model deployment ID: []
+2024-11-18 13:39:16.304 [info] Logged in as sankinsank
+2024-11-18 13:39:17.612 [info] Got Copilot token for sankinsank
+2024-11-18 13:39:17.679 [info] Fetched model metadata in 59ms 14c30021-bba3-42c3-a7e1-ccd4842a2a54
+2024-11-18 13:39:17.727 [info] copilot token chat_enabled: true, sku: free_educational
+2024-11-18 13:49:09.379 [info] message 0 returned. finish reason: [stop]
+2024-11-18 13:49:09.381 [info] request done: requestId: [87fc1480-36a5-411e-ba97-5f4768262198] model deployment ID: []
+2024-11-18 13:49:16.073 [info] message 0 returned. finish reason: [stop]
+2024-11-18 13:49:16.076 [info] request done: requestId: [0eb8fede-ecf6-4aeb-ae74-b1c3114c8032] model deployment ID: []
+2024-11-18 13:54:17.785 [info] Fetched model metadata in 51ms 3358dbc0-86b4-4ee8-84ec-d7c6cd13cd6e
+2024-11-18 14:04:17.873 [info] Logged in as sankinsank
+2024-11-18 14:04:19.214 [info] Got Copilot token for sankinsank
+2024-11-18 14:04:19.474 [info] copilot token chat_enabled: true, sku: free_educational
+2024-11-18 14:04:19.700 [info] Fetched model metadata in 110ms 93337043-915b-446b-8d20-e09cf02ac925

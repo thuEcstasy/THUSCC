@@ -1,0 +1,55 @@
+2024-11-14 18:11:08.230 [info] 
+
+
+
+
+2024-11-14 18:11:08.230 [info] Extension host agent started.
+2024-11-14 18:11:08.252 [info] [<unknown>][af2d2a7e][ManagementConnection] New connection established.
+2024-11-14 18:11:08.259 [info] [<unknown>][1d8aaea6][ExtensionHostConnection] New connection established.
+2024-11-14 18:11:08.335 [info] Installing extensions...
+2024-11-14 18:11:09.606 [info] [<unknown>][1d8aaea6][ExtensionHostConnection] <31603> Launched Extension Host Process.
+2024-11-14 18:11:09.719 [error] [network] #1: https://az764295.vo.msecnd.net/extensions/marketplace.json - error GET read ECONNRESET
+2024-11-14 18:11:10.239 [info] Installing extension 'ms-ceintl.vscode-language-pack-zh-hans'...
+2024-11-14 18:11:10.241 [info] Getting Manifest... ms-ceintl.vscode-language-pack-zh-hans
+2024-11-14 18:11:10.248 [info] Installing extension: ms-ceintl.vscode-language-pack-zh-hans {"isMachineScoped":true,"isBuiltin":false,"installGivenVersion":false,"isApplicationScoped":true,"installOnlyNewlyAddedFromExtensionPack":true,"profileLocation":{"$mid":1,"fsPath":"/home/thuscc24team04/.vscode-server/extensions/extensions.json","external":"file:///home/thuscc24team04/.vscode-server/extensions/extensions.json","path":"/home/thuscc24team04/.vscode-server/extensions/extensions.json","scheme":"file"},"productVersion":{"version":"1.95.2","date":"2024-11-07T11:07:22.054Z"}}
+2024-11-14 18:11:12.466 [info] Extension signature verification result for ms-ceintl.vscode-language-pack-zh-hans: Success. Executed: true. Duration: 1406ms.
+2024-11-14 18:11:12.981 [info] Extracted extension to file:///home/thuscc24team04/.vscode-server/extensions/ms-ceintl.vscode-language-pack-zh-hans-1.95.2024103009: ms-ceintl.vscode-language-pack-zh-hans
+2024-11-14 18:11:12.987 [info] Renamed to /home/thuscc24team04/.vscode-server/extensions/ms-ceintl.vscode-language-pack-zh-hans-1.95.2024103009
+2024-11-14 18:11:13.008 [info] Adding language packs from the extension ms-ceintl.vscode-language-pack-zh-hans
+2024-11-14 18:11:13.053 [info] Extension installed successfully: ms-ceintl.vscode-language-pack-zh-hans file:///home/thuscc24team04/.vscode-server/extensions/extensions.json
+2024-11-14 18:11:13.055 [info] Extension 'ms-ceintl.vscode-language-pack-zh-hans' v1.95.2024103009 was successfully installed.
+2024-11-14 18:11:20.560 [info] [<unknown>][af2d2a7e][ManagementConnection] The client has disconnected gracefully, so the connection will be disposed.
+2024-11-14 18:11:20.616 [info] [<unknown>][1d8aaea6][ExtensionHostConnection] <31603> Extension Host Process exited with code: 0, signal: null.
+2024-11-14 18:11:20.617 [info] Cancelling previous shutdown timeout
+2024-11-14 18:11:20.617 [info] Last EH closed, waiting before shutting down
+2024-11-14 18:11:23.713 [info] [<unknown>][26028301][ManagementConnection] New connection established.
+2024-11-14 18:11:23.719 [info] [<unknown>][fd488c81][ExtensionHostConnection] New connection established.
+2024-11-14 18:11:23.725 [info] [<unknown>][fd488c81][ExtensionHostConnection] <32145> Launched Extension Host Process.
+2024-11-14 18:16:20.621 [info] New EH opened, aborting shutdown
+2024-11-14 18:16:20.625 [error] Error: Unexpected SIGPIPE
+    at process.<anonymous> (file:///home/thuscc24team04/.vscode-server/cli/servers/Stable-e8653663e8840adaf45af01eab5c627a5af81807/server/out/server-main.js:183:1060)
+    at process.emit (node:events:531:35)
+2024-11-14 19:22:29.608 [info] [<unknown>][26028301][ManagementConnection] The client has disconnected gracefully, so the connection will be disposed.
+2024-11-14 19:22:29.748 [info] [<unknown>][fd488c81][ExtensionHostConnection] <32145> Extension Host Process exited with code: 0, signal: null.
+2024-11-14 19:22:29.748 [info] Last EH closed, waiting before shutting down
+2024-11-14 19:22:32.971 [info] [<unknown>][5b69151b][ManagementConnection] New connection established.
+2024-11-14 19:22:32.977 [info] [<unknown>][c1484559][ExtensionHostConnection] New connection established.
+2024-11-14 19:22:33.006 [info] [<unknown>][c1484559][ExtensionHostConnection] <5428> Launched Extension Host Process.
+2024-11-14 19:22:33.196 [error] [network] #10: https://az764295.vo.msecnd.net/extensions/marketplace.json - error GET read ECONNRESET
+2024-11-14 19:27:29.750 [info] New EH opened, aborting shutdown
+2024-11-14 19:33:59.020 [warning] No ptyHost heartbeat after 6 seconds
+2024-11-14 19:50:07.662 [info] [<unknown>][475a2c20][ManagementConnection] New connection established.
+2024-11-14 19:50:07.669 [info] [<unknown>][69e3a4fe][ExtensionHostConnection] New connection established.
+2024-11-14 19:50:07.679 [info] [<unknown>][69e3a4fe][ExtensionHostConnection] <58827> Launched Extension Host Process.
+2024-11-14 19:50:07.816 [error] [network] #11: https://az764295.vo.msecnd.net/extensions/marketplace.json - error GET read ECONNRESET
+2024-11-14 19:58:26.328 [warning] [File Watcher (node.js)] Watcher shutdown because watched path got deleted
+2024-11-14 19:59:42.772 [warning] [File Watcher (node.js)] Watcher shutdown because watched path got deleted
+2024-11-14 20:00:33.181 [warning] [File Watcher (node.js)] Watcher shutdown because watched path got deleted
+2024-11-14 20:01:11.510 [warning] [File Watcher (node.js)] Watcher shutdown because watched path got deleted
+2024-11-14 21:37:04.166 [info] [<unknown>][5b69151b][ManagementConnection] The client has disconnected, will wait for reconnection 3h before disposing...
+2024-11-14 23:44:19.316 [info] [<unknown>][475a2c20][ManagementConnection] The client has disconnected gracefully, so the connection will be disposed.
+2024-11-14 23:44:19.453 [info] [<unknown>][69e3a4fe][ExtensionHostConnection] <58827> Extension Host Process exited with code: 0, signal: null.
+2024-11-15 00:36:46.157 [info] [<unknown>][c1484559][ExtensionHostConnection] <5428> Extension Host Process exited with code: 0, signal: null.
+2024-11-15 00:36:46.158 [info] Last EH closed, waiting before shutting down
+2024-11-15 00:37:12.554 [info] [<unknown>][5b69151b][ManagementConnection] The reconnection grace time of 3h has expired, so the connection will be disposed.
+2024-11-15 00:41:46.159 [info] Last EH closed, shutting down

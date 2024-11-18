@@ -1,0 +1,43 @@
+{
+    "editor.fontSize": 20,
+    "remote.SSH.remotePlatform": {
+        "166.111.68.163": "linux",
+        "192.168.40.44": "linux",
+        "192.168.40.46": "linux",
+        "192.168.40.47": "linux",
+        "img87": "linux",
+        "img75": "linux",
+        "166.111.226.101": "linux",
+        "Compile": "linux",
+        "ln2": "linux",
+        "thuscc24": "linux"
+    },
+    "cmake.configureOnOpen": true,
+    "security.allowedUNCHosts": [
+        "wsl.localhost"
+    ],
+    "terminal.integrated.fontSize": 22,
+    "security.workspace.trust.untrustedFiles": "open",
+    "cmake.showOptionsMovedNotification": false,
+    "workbench.settings.applyToAllProfiles": [
+        
+       
+    ],
+    "workbench.colorCustomizations": {
+        "editor.selectionBackground": "#7f807a80"
+    },
+    "workbench.editor.splitInGroupLayout": "vertical",
+    "editor.unicodeHighlight.nonBasicASCII": false,
+    "Codegeex.Privacy": true,
+    "python.terminal.activateEnvironment": false,
+    "files.encoding": "gbk",
+    "files.autoGuessEncoding": true,
+    "cmake.pinnedCommands": [
+        "workbench.action.tasks.configureTaskRunner",
+        "workbench.action.tasks.runTask"
+    ],
+    "workbench.colorTheme": "Shades of Purple (Super Dark)",
+    "workbench.iconTheme": "material-icon-theme",
+    "window.zoomLevel": -1,
+    "Codegeex.License": ""
+}

@@ -1,0 +1,22 @@
+2024-11-14 11:21:17.357 [info] 
+
+
+
+
+2024-11-14 11:21:17.357 [info] Extension host agent started.
+2024-11-14 11:21:17.388 [info] [<unknown>][7f6cac83][ExtensionHostConnection] New connection established.
+2024-11-14 11:21:17.405 [info] [<unknown>][6e6ae2cd][ManagementConnection] New connection established.
+2024-11-14 11:21:18.801 [info] [<unknown>][7f6cac83][ExtensionHostConnection] <96246> Launched Extension Host Process.
+2024-11-14 11:21:18.903 [error] [network] #1: https://az764295.vo.msecnd.net/extensions/marketplace.json - error GET read ECONNRESET
+2024-11-14 11:21:25.980 [info] [<unknown>][6e6ae2cd][ManagementConnection] The client has disconnected gracefully, so the connection will be disposed.
+2024-11-14 11:21:26.035 [info] [<unknown>][7f6cac83][ExtensionHostConnection] <96246> Extension Host Process exited with code: 0, signal: null.
+2024-11-14 11:21:26.036 [info] Cancelling previous shutdown timeout
+2024-11-14 11:21:26.036 [info] Last EH closed, waiting before shutting down
+2024-11-14 11:21:28.765 [info] [<unknown>][26030677][ExtensionHostConnection] New connection established.
+2024-11-14 11:21:28.771 [info] [<unknown>][26030677][ExtensionHostConnection] <96620> Launched Extension Host Process.
+2024-11-14 11:21:28.780 [info] [<unknown>][7f800815][ManagementConnection] New connection established.
+2024-11-14 11:23:41.283 [info] [<unknown>][7f800815][ManagementConnection] The client has disconnected gracefully, so the connection will be disposed.
+2024-11-14 11:23:41.332 [info] [<unknown>][26030677][ExtensionHostConnection] <96620> Extension Host Process exited with code: 0, signal: null.
+2024-11-14 11:23:41.332 [info] Cancelling previous shutdown timeout
+2024-11-14 11:23:41.332 [info] Last EH closed, waiting before shutting down
+2024-11-14 11:28:41.334 [info] Last EH closed, shutting down

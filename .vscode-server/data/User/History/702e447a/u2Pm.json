@@ -1,0 +1,29 @@
+{
+    "terminal.integrated.enableMultiLinePasteWarning": false,
+    "files.autoSave": "afterDelay",
+    "window.menuBarVisibility": "compact",
+    "cmake.configureOnOpen": true,
+    "remote.SSH.remotePlatform": {
+        "103.242.175.118": "linux",
+        "166.111.68.163": "linux",
+        "connect.cqa1.seetacloud.com": "linux",
+        "connect.bjb1.seetacloud.com": "linux",
+        "166.111.226.101": "linux",
+        "connect.westc.gpuhub.com": "linux",
+        "connect.nmb1.seetacloud.com": "linux",
+        "192.168.11.1": "linux"
+    },
+    "editor.unicodeHighlight.invisibleCharacters": false,
+    "editor.unicodeHighlight.ambiguousCharacters": false,
+    "editor.formatOnType": true,
+    "Codegeex.Privacy": true,
+    "Codegeex.EnableExtension": false,
+    "git.confirmSync": false,
+    "cmake.pinnedCommands": [
+        "workbench.action.tasks.configureTaskRunner",
+        "workbench.action.tasks.runTask"
+    ],
+    "github.copilot.advanced": {
+        "authProvider": "github"
+    }
+}

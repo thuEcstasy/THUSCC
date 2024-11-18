@@ -1,0 +1,1762 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>MVAPICH :: Benchmarks</title>
+
+    
+	<link rel="icon" href="/static/images/MVAPICH_favicon.png" />
+
+
+    <link href="/static/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/static/css/jquery-ui.min.css" rel="stylesheet">
+    <link href="/static/css/generic.css" rel="stylesheet">
+    
+    
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    
+    <meta name="keywords" content="MPI, MVAPICH, high performance computing, parallel computing, cluster">
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    
+      ga('create', 'UA-37133620-1', 'ohio-state.edu');
+      ga('send', 'pageview');
+    
+    </script>
+
+  </head>
+
+  <body>
+    <div class="navbar navbar-default center navbar-static-top" role="navigation">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          
+            <a class="navbar-brand" href="/">MVAPICH</a>
+
+        </div>
+        <div class="navbar-collapse collapse" id="navbar-collapse">
+          <ul class="nav navbar-nav">
+            
+                <li class="home "><a href="/">Home</a></li>
+                <li class="dropdown ">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Overview<b class="caret"></b></a>
+                  <ul class="dropdown-menu" role="menu" aria-label="Overview Drop Down">
+                    <li role="menuitem"><a href="/overview/">Overview</a></li>
+                    <li role="menuitem"><a href="/features/">Features</a></li>
+	          </ul>
+                </li>
+                <li class="dropdown ">
+                <li class=""><a href="/register/">Download</a></li>
+                <li class="dropdown ">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Performance<b class="caret"></b></a>
+                  <ul class="dropdown-menu multi-level" role="menu" aria-label="Performance Drop Down">
+
+                    <li role="menuitem"class="dropdown-submenu">
+                        <a tabindex="-1" href="#"><h5>Job Startup</h5></a>
+                        <ul class="dropdown-menu" role="menu" aria-label="Job Startup">
+                            <li role="menuitem"><a href="/performance/job-startup/">Performance</a></li>
+	                    </ul>
+                    </li>
+
+                    <li role="presentation" class="divider"></li>
+
+                    <li role="menuitem"class="dropdown-submenu">
+                        <a tabindex="-1" href="#"><h5>MV2</h5></a>
+                        <ul class="dropdown-menu" role="menu" aria-label="MVAPICH 2 Drop Down">
+                            <li role="menuitem"><a href="/performance/pt_to_pt/">Pt-to-Pt</a></li>
+                            <li role="menuitem"><a href="/performance/collectives/">Collectives</a></li>
+	                    </ul>
+                    </li>
+
+                   <li role="presentation" class="divider"></li>
+
+                    <li role="menuitem"class="dropdown-submenu">
+                        <a tabindex="-1" href="#"><h5>MV2-Azure</h5></a>
+                        <ul class="dropdown-menu" role="menu" aria-label="MVAPICH 2 Azure Drop Down">
+                            <li role="menuitem"><a href="/performance/mv2-azure-pt_to_pt/">Pt-to-Pt</a></li>
+                            </ul>
+                    </li>
+
+                    <li role="presentation" class="divider"></li>
+
+                    <li role="menuitem" class="dropdown-submenu">
+                        <a tabindex="-1" href="#"><h5>MV2-X</h5></a>
+                        <ul class="dropdown-menu" role="menu" aria-label="MVAPICH 2 X Drop Down">
+                                    <li role="menuitem"><a href="/performance/mv2x-pt_to_pt/">XPMEM Pt-to-Pt</a></li>
+		                   
+		                    <li role="menuitem"><a href="/performance/openshmem/">OpenSHMEM</a></li>
+		                    <li role="menuitem"><a href="/performance/upc/">UPC</a></li>
+		                    <li role="menuitem"><a href="/performance/upcxx/">UPC++</a></li>
+	                    </ul>
+                    </li>
+
+                    <li role="presentation" class="divider"></li>
+
+                    <li role="menuitem" class="dropdown-submenu">
+                        <a tabindex="-1" href="#"><h5>MV2-X-AWS</h5></a>
+                        <ul class="dropdown-menu" role="menu" aria-label="MVAPICH 2 X AWS Drop Down">
+                                    <li role="menuitem"><a href="/performance/mv2x-aws-pt_to_pt/">Pt-to-Pt</a></li>
+                                    <li role="menuitem"><a href="/performance/mv2x-aws-applications/">Applications</a></li>
+                                    <li role="menuitem"><a href="/performance/mv2x-aws-collectives/">Collectives</a></li>
+	                    </ul>
+                    </li>
+
+                   <li role="presentation" class="divider"></li>
+
+                    <li role="menuitem" class="dropdown-submenu">
+                        <a tabindex="-1" href="#"><h5>MV2-X-Azure</h5></a>
+                        <ul class="dropdown-menu" role="menu" aria-label="MVAPICH 2 X Azure Drop Down">
+			    <li role="menuitem"><a href="/performance/mv2x-azure-pt_to_pt/">Pt-to-Pt</a></li>
+                            </ul>
+                    </li>
+    
+                    <li role="presentation" class="divider"></li>
+
+                    <li role="menuitem" class="dropdown-submenu">
+                        <a tabindex="-1" href="#"><h5>MV2-GDR</h5></a>
+                            <ul class="dropdown-menu" role="menu" aria-label="MVAPICH 2 GDR Drop Down">
+                                <li role="menuitem" class="dropdown-submenu">
+                                  <a tabindex="-1" href="#"><h5>CUDA</h5></a>
+                                  <ul class="dropdown-menu" role="menu" aria-label="CUDA Drop Down">
+		                    <li role="menuitem"><a href="/performance/gdr-pt_to_pt/">Pt-to-Pt</a></li>
+		                    <li role="menuitem"><a href="/performance/gdr-collectives/">Collectives</a></li>
+                                  </ul>
+                                </li>
+                                <li role="menuitem" class="dropdown-submenu">
+                                  <a tabindex="-1" href="#"><h5>ROCM</h5></a>
+                                  <ul class="dropdown-menu" role="menu" aria-label="ROCM Drop Down">
+		                    <li role="menuitem"><a href="/performance/gdr-rocm-pt_to_pt/">Pt-to-Pt</a></li>
+                                  </ul>
+                                </li>
+	                    </ul>
+                    </li>
+ 
+	            <li role="presentation" class="divider"></li>
+
+                    <li role="menuitem" class="dropdown-submenu">
+                        <a tabindex="-1" href="#"><h5>MV2-J</h5></a>
+                            <ul class="dropdown-menu" role="menu" aria-label="MVAPICH 2 J Drop Down">
+		                    <li role="menuitem"><a href="/performance/mv2j-pt_to_pt/">Pt-to-Pt</a></li>
+		                    <li role="menuitem"><a href="/performance/mv2j-collectives/">Collectives</a></li>
+	                    </ul>
+                    </li>
+
+                    <li role="presentation" class="divider"></li>
+
+                    <li role="menuitem" class="dropdown-submenu">
+                        <a tabindex="-1" href="#"><h5>MV2-MIC</h5></a>
+                        <ul class="dropdown-menu" role="menu" aria-label="MVAPICH 2 MIC Drop Down">
+                            <li role="menuitem"><a href="/performance/mic-pt_to_pt/">Microbenchmarks</a></li>
+	                    </ul>
+                    </li>
+
+                    <li role="presentation" class="divider"></li>
+
+                    <li role="menuitem" class="dropdown-submenu">
+                        <a tabindex="-1" href="#"><h5>MV2-Virt</h5></a>
+                        <ul class="dropdown-menu" role="menu" aria-label="MVAPICH 2 Virt Drop Down">
+		                    <li role="menuitem"><a href="/performance/v-pt_to_pt/">Virtual Machine Pt-to-Pt</a></li>
+		                    <li role="menuitem"><a href="/performance/v-application/">Virtual Machine Applications</a></li>
+		                    <li role="menuitem"><a href="/performance/cont-pt_to_pt/">Docker Pt-to-Pt</a></li>
+		                    <li role="menuitem"><a href="/performance/cont-application/">Docker Applications</a></li>
+		                    <li role="menuitem"><a href="/performance/singularity-pt_to_pt/">Singularity Pt-to-Pt</a></li>
+		                    <li role="menuitem"><a href="/performance/singularity-application/">Singularity Applications</a></li>
+	                    </ul>
+                    </li>
+
+                    <li role="presentation" class="divider"></li>
+
+                    <li role="menuitem" class="dropdown-submenu">
+                        <a tabindex="-1" href="#"><h5>MV2-EA</h5></a>
+                        <ul class="dropdown-menu" role="menu" aria-label="MVAPICH 2 EA Drop Down">
+                            <li role="menuitem"><a href="/performance/ea-application/">Applications</a></li>
+	                    </ul>
+                    </li> 
+	          </ul>
+                </li>
+                <li class="active"><a href="/benchmarks/">Benchmarks</a></li>
+                <li class="dropdown ">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Tools<b class="caret"></b></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="/tools/oemt/">OEMT</a></li>
+                      <li class="dropdown-submenu"> <a tabindex="-1" href="/tools/osu-inam/"><h5>OSU INAM</h5></a>
+                        <ul class="dropdown-menu" role="menu" aria-label="OSU INAM Drop Down">
+                            <li role="menuitem"><a href="/tools/osu-inam/">Overview</a></li>
+                            <li role="menuitem"><a href="/tools/osu-inam/features">Features</a></li>
+                            <li role="menuitem"><a href="/tools/osu-inam/database">Database Size Calculator</a></li>
+                            <li role="menuitem"><a href="/tools/osu-inam/performance">Performance</a></li>
+                        </ul>
+                    </li>
+                  </ul>
+                </li>
+                <li class=""><a href="/publications/">Publications</a></li>
+                <li class=""><a href="/talks/">Talks</a></li>
+                <li class=""><a href="/users/">Users</a></li>
+                <li class=""><a href="/best_practices/">Best Practices</a></li>
+                <li class="dropdown ">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Support<b class="caret"></b></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="/userguide/">Userguide</a></li>
+                    <li><a href="/mailinglists/">Mailing Lists</a></li>
+                    <li><a href="/faq/">FAQ</a></li>
+                    <li><a href="/help/">Help</a></li>
+                  </ul>
+                </li>
+                <li><a href="http://mug.mvapich.cse.ohio-state.edu/">MUG</a></li>
+                <li><a href="http://nowlab.cse.ohio-state.edu/jobs/">Jobs</a></li>
+
+
+          </ul>
+        </div><!--/.nav-collapse -->
+    </div>
+
+    <div class="container" id="header">
+      
+ 
+      
+      
+      
+          <div class="text-center">
+            <div class="hidden-sm col-md-2">
+              <img class="img-rounded img-polaroid fitwidth" data-src="holder.js/300x200" src="/static/images/MVAPICH-Stacked.png" alt="mvapich2" />
+            </div>
+            <div class="col-sm-12 col-md-8 ">
+              <h3>MVAPICH: MPI over InfiniBand, Omni-Path, Ethernet/iWARP, RoCE, and Slingshot</h3>
+              <p><a href="http://nowlab.cse.ohio-state.edu/">Network-Based Computing Laboratory</a> <br />
+            </div>
+            <div class="hidden-sm col-md-2">
+              <img class="img-rounded img-polaroid fitwidth" data-src="holder.js/300x200" src="/static/images/TheOhioStateUniversity-Stacked-RGBHEX.png" alt="OSU Logo" />
+            </div>
+          </div>
+
+    </div>
+
+    <hr>
+
+    
+    <div id="maincontent" class="container justify">
+
+      
+
+
+<ul> 
+    <li>
+        
+        OSU Micro-Benchmarks 7.5 (11/01/24) [<a onclick="return trackDownload(this,'osubenchmarks','7.5');"
+        href="/download/mvapich/osu-micro-benchmarks-7.5.tar.gz">Tarball</a>]
+    </li>
+    <ul>
+        <li>
+            Please see <a href="/static/media/mvapich/CHANGES-OMB.txt">CHANGES</a> for the full changelog.
+        </li>
+	
+        <li>
+            You may also take a look at the appropriate README files for more information.
+        </li>
+		<ul>
+        <li>
+            C Benchmarks <a href="/static/media/mvapich/README-OMB.txt">README</a>.
+        </li>
+        <li>
+            Java Benchmarks <a href="/static/media/mvapich/README-OMB-J.txt">README</a>.
+        </li>
+        <li>
+            Python Benchmarks <a href="/static/media/mvapich/README-OMB-PY.txt">README</a>.
+        </li>
+		</ul>
+        <li>
+            The benchmarks are available under the BSD <a href="/static/media/mvapich/LICENSE-OMB.txt">license</a>.
+        </li>
+    </ul>
+
+<li>
+    Here, we list various benchmarks that are part of the OMB package in the C, Java, and Python programming languages for various parallel programming models like MPI, OpenSHMEM, UPC, UPC++, and NCCL. A high-level description of these benchmarks are provided below:
+
+    <ul>
+    <li> C Benchmarks
+	<ul>
+	<li>MPI
+	<ul>
+<li>Host-based Benchmarks<ul>	
+    <li>
+          Point-to-Point MPI Benchmarks: Latency, multi-threaded latency,
+          multi-pair latency, multiple bandwidth / message rate test,
+          bandwidth, bidirectional bandwidth
+    </li>
+    <li> 
+          Blocking Collective MPI Benchmarks: Collective latency tests for various MPI
+          collective operations such as
+          MPI_Allgather, MPI_Alltoall, MPI_Allreduce, MPI_Barrier, MPI_Bcast,
+          MPI_Gather, MPI_Reduce, MPI_Reduce_Scatter, MPI_Scatter and vector
+          collectives. 
+    </li> 
+    <li>
+          Non-Blocking Collective (NBC) MPI Benchmarks: Collective latency and Overlap tests for various MPI collective operations such as
+          MPI_Iallgather, MPI_Iallreduce, MPI_Ialltoall, MPI_Ibarrier, MPI_Ibcast,
+          MPI_Igather, MPI_Ireduce, MPI_Iscatter and vector
+          collectives.
+    </li>
+    
+    <li>
+          One-sided MPI Benchmarks: one-sided put latency, one-sided put bandwidth,
+          one-sided put bidirectional bandwidth, one-sided get latency,
+          one-sided get bandwidth, one-sided accumulate latency, compare and
+          swap latency, fetch and operate and get_accumulate
+          latency for MVAPICH2 (MPI-2 and MPI-3).  
+    </li>
+    <li>
+          Startup Benchmarks:
+          osu_init, osu_hello
+    </li>
+	</ul>
+   </li>
+<li>Device-based Benchmarks<ul>
+<li>CUDA, ROCm, and OpenACC Extensions to OSU Micro Benchmarks</li>
+<li>Support for CUDA Managed Memory</li>
+</ul</li>
+</ul></li>
+</ul></li>
+
+<li>OpenSHMEM Benchmarks
+<ul>
+	 <li>
+          Point-to-Point OpenSHMEM Benchmarks:
+          put latency, get latency, message rate, atomics,
+    </li>
+    <li>
+          Collective OpenSHMEM Benchmarks:
+          collect latency, broadcast latency, reduce latency, and barrier latency
+    </li>
+</ul>
+</li>
+<li> UPC Benchmarks
+<ul>
+    <li>
+          Point-to-Point UPC Benchmarks: put latency, get latency
+    </li>
+    <li>
+          Collective UPC Benchmarks:
+          broadcast latency, scatter latency, gather latency, all_gather latency,
+          and exchange latency
+    </li>
+</ul></li>
+<li> UPC++ Benchmarks
+<ul>
+    <li>
+          Point-to-Point UPC++ Benchmarks: async copy put latency, async copy get latency
+    </li>
+    <li>
+          Collective UPC++ Benchmarks:
+          broadcast latency, scatter latency, gather latency, reduce latency,
+          all_gather latency, and all_to_all latency
+    </li>
+</ul></li>
+<li> NCCL Benchmarks<ul>
+    <li>
+          Point-to-Point NCCL Benchmarks: NCCL-based Latency, bandwidth, bidirectional bandwidth
+    </li>
+    <li> 
+          Collective NCCL Benchmarks: Collective latency tests for various NCCL collective
+          operations such as Allgather, Allreduce, Bcast, Reduce, Reduce_Scatter, Alltoall. 
+    </li> 
+</ul></li></ul>
+<li>Java Benchmarks<ul>
+    <li>Point-to-Point Java Bindings Benchmarks: Latency, Bandwidth, Bidirectional Bandwidth, Bandwidth Test for Open MPI Java Bindings, Bidirectional Bandwidth Test for Open MPI Java Bindings
+    </li>
+    <li>Collective Java Bindings Benchmarks:  Collective latency tests for various MPI collective operations such as MPI_Allgather,  MPI_Allgatherv, MPI_Allreduce, MPI_Alltoall, MPI_Alltoallv, MPI_Barrier, MPI_Bcast, MPI_Gather, MPI_Gatherv, MPI_Reduce, MPI_Reduce_scatter, MPI_Scatter, MPI_Scatterv
+    </li>
+</ul></li>
+<li>Python Benchmarks<ul>
+      <li>Point-to-Point Python Benchmarks: Latency, Bandwidth, Bidirectional Bandwidth, Multi-pair Latency
+     </li>
+     <li>Collective Python Benchmarks: Collective latency tests for various MPI collective operations such as MPI_Allgather, MPI_Allgatherv, MPI_Allreduce, MPI_Alltoall,  MPI_Alltoallv, MPI_Barrier, MPI_Bcast, MPI_Gather, MPI_Gatherv, MPI_Reduce,  MPI_Reduce_scatter, MPI_Scatter, MPI_Scatterv
+        </li>
+</ul></li>
+    </ul>
+</li>
+
+</ul>
+<p>
+Please note that there are many different ways to measure these
+performance parameters. For example, the bandwidth test can have
+different variations regarding the types of MPI calls (blocking
+vs. non-blocking) being used, total number of back-to-back messages
+sent in one iteration, number of iterations, etc.  Other ways to
+measure bandwidth may give different numbers.  Readers are welcome to
+use other tests, as appropriate to their application environments.
+</p>
+<div class="panel-group" id="accordion">
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">
+        C Benchmarks</a>
+      </h4>
+   </div> 
+    <div id="collapse1" class="panel-collapse collapse">
+      <div class="panel-body">
+All C Benchmarks have the ability to evaluate the correctness of the data exchanged through in-built data validation schemes in addition to evaluating the communication performance.
+<div class="panel-group" id="accordion1">
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion1" href="#MPI">
+        MPI Benchmarks</a>
+      </h4>
+    </div>
+    <div id="MPI" class="panel-collapse collapse">
+      <div class="panel-body">
+<div class="panel-group" id="accordion3">
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion3" href="#host">
+        Host-based Benchmarks</a>
+      </h4>
+    </div>
+    <div id="host" class="panel-collapse collapse">
+      <div class="panel-body"><div class="panel-group" id="accordion5">
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion5" href="#p2p">
+        Point-to-Point MPI Benchmarks</a>
+      </h4>
+    </div>
+    <div id="p2p" class="panel-collapse collapse">
+      <div class="panel-body">
+<ul> 
+<li><strong>osu_latency</strong> - Latency Test </li>
+The latency tests are carried out in a ping-pong fashion. The sender
+sends a message with a certain data size to the receiver and waits for a
+reply from the receiver. The receiver receives the message from the sender
+and sends back a reply with the same data size. Many iterations of this
+ping-pong test are carried out and average one-way latency numbers are
+obtained. Blocking version of MPI functions (MPI_Send and MPI_Recv) are
+used in the tests.
+
+<li><strong>osu_latency_mt</strong> - Multi-threaded Latency Test</li>
+The multi-threaded latency test performs a ping-pong test with a single
+sender process and multiple threads on the receiving process. In this test
+the sending process sends a message of a given data size to the receiver
+and waits for a reply from the receiver process. The receiving process has
+a variable number of receiving threads (set by default to 2), where each
+thread calls MPI_Recv and upon receiving a message sends back a response
+of equal size. Many iterations are performed and the average one-way
+latency numbers are reported. Users can modify the number of communicating
+threads being used by using the "-t" runtime option.  Examples:
+            -t 4        // receiver threads = 4 and sender threads = 1
+            -t 4:6      // sender threads = 4 and receiver threads = 6
+            -t 2:       // not defined
+
+<li><strong>osu_latency_mp</strong> - Multi-process Latency Test</li>
+The multi-process latency test performs a ping-pong test with a single
+sender process and a single receiver process, both having one or more
+child processes that are spawned using the fork() system call. In this test
+the sending process(parent) sends a message of a given data size to the
+receiver(parent) process and waits for a reply from the receiver process. 
+Both the sending and receiving process have a variable number of child
+processes (set by default to 1 child process), where each child process
+sleeps for 2 seconds after the fork call and exits. The parent processes 
+carry out the ping-pong test where many iterations are performed and the 
+average one-way latency numbers are reported. This test is available here.
+"-t" option can be used to set the number of sender and receiver processes
+including the parent processes to be used in a benchmark.
+
+Examples:
+           -t 4        // receiver processes = 4 and sender processes = 1 
+           -t 4:6      // sender processes = 4 and receiver processes = 6
+           -t 2:       // not defined
+
+The purpose of this test is to check if the underlying MPI communication
+runtime has taken care of fork safety even if the application has not.
+
+A new environment variable "MV2_SUPPORT_FORK_SAFETY" was introduced with
+MVAPICH2 2.3.4 to make MVAPICH2 takes care of fork safety for
+applications that require it.
+
+The support for fork safety is disabled by default in MVAPICH2 due to
+performance reasons. When running osu_latency_mp with MVAPICH2, set
+the environment variable MV2_SUPPORT_FORK_SAFETY to 1. When running
+osu_latency_mp with other MPI libraries that do not support fork safety,
+set the environment variables RDMAV_FORK_SAFE or IBV_FORK_SAFE to 1.
+
+<li><strong>osu_bw</strong> - Bandwidth Test</li>
+The bandwidth tests are carried out by having the sender sending out a
+fixed number (equal to the window size) of back-to-back messages to the
+receiver and then waiting for a reply from the receiver. The receiver
+sends the reply only after receiving all these messages. This process is
+repeated for several iterations and the bandwidth is calculated based on
+the elapsed time (from the time sender sends the first message until the
+time it receives the reply back from the receiver) and the number of bytes
+sent by the sender. The objective of this bandwidth test is to determine
+the maximum sustained date rate that can be achieved at the network level.
+Thus, non-blocking version of MPI functions (MPI_Isend and MPI_Irecv) are
+used in the test.
+
+<li><strong>osu_bibw</strong> - Bidirectional Bandwidth Test</li>
+The bidirectional bandwidth test is similar to the bandwidth test, except
+that both the nodes involved send out a fixed number of back-to-back
+messages and wait for the reply. This test measures the maximum
+sustainable aggregate bandwidth by two nodes.
+
+<li><strong>osu_mbw_mr</strong> - Multiple Bandwidth / Message Rate Test</li>
+The multi-pair bandwidth and message rate test evaluates the aggregate
+uni-directional bandwidth and message rate between multiple pairs of
+processes. Each of the sending processes sends a fixed number of messages
+(the window size) back-to-back to the paired receiving process before
+waiting for a reply from the receiver. This process is repeated for
+several iterations. The objective of this benchmark is to determine the
+achieved bandwidth and message rate from one node to another node with a
+configurable number of processes running on each node.
+
+<li><strong>osu_multi_lat</strong> - Multi-pair Latency Test</li>
+This test is very similar to the latency test. However, at the same 
+instant multiple pairs are performing the same test simultaneously.
+In order to perform the test across just two nodes the hostnames must
+be specified in block fashion.
+
+</ul>
+</div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion5" href="#bc">
+        Blocking Collective MPI Benchmarks</a>
+      </h4>
+    </div>
+    <div id="bc" class="panel-collapse collapse">
+      <div class="panel-body"
+
+<p>
+The latest OMB version includes benchmarks for various MPI blocking 
+collective operations (MPI_Allgather, MPI_Alltoall, MPI_Allreduce, 
+MPI_Barrier, MPI_Bcast, MPI_Gather, MPI_Reduce, MPI_Reduce_Scatter, 
+MPI_Scatter and vector collectives). These benchmarks work in the
+following manner.  Suppose users run the osu_bcast benchmark with N
+processes, the benchmark measures the min, max and the average latency of
+the MPI_Bcast collective operation across N processes, for various
+message lengths, over a large number of iterations. In the default
+version, these benchmarks report the average latency for each message
+length. Additionally, the benchmarks offer the following options:
+"-f" can be used to report additional statistics of the benchmark,
+     such as min and max latencies and the number of iterations.
+"-m" option can be used to set the minimum and maximum message length
+     to be used in a benchmark. In the default version, the benchmarks
+     report the latencies for up to 1MB message lengths. Examples:
+       -m 128    // min = default, max = 128
+       -m 2:128  // min = 2, max = 128
+       -m 2:     // min = 2, max = default
+"-x" can be used to set the number of warmup iterations to skip for each
+     message length.
+"-i" can be used to set the number of iterations to run for each message
+     length.
+"-M" can be used to set per process maximum memory consumption.  By
+     default the benchmarks are limited to 512MB allocations.
+</p>
+<ul>
+<li>osu_allgather      - MPI_Allgather Latency Test</li>
+<li>osu_allgatherv     - MPI_Allgatherv Latency Test</li>
+<li>osu_allreduce      - MPI_Allreduce Latency Test</li>
+<li>osu_alltoall       - MPI_Alltoall Latency Test</li>
+<li>osu_alltoallv      - MPI_Alltoallv Latency Test</li>
+<li>osu_barrier        - MPI_Barrier Latency Test</li>
+<li>osu_bcast          - MPI_Bcast Latency Test</li>
+<li>osu_gather         - MPI_Gather Latency Test</li>
+<li>osu_gatherv        - MPI_Gatherv Latency Test</li>
+<li>osu_reduce         - MPI_Reduce Latency Test</li>
+<li>osu_reduce_scatter - MPI_Reduce_scatter Latency Test</li>
+<li>osu_scatter        - MPI_Scatter Latency Test</li>
+<li>osu_scatterv       - MPI_Scatterv Latency Test</li>
+</ul>
+
+</div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion5" href="#nonb">
+        Non-Blocking Collective MPI Benchmarks</a>
+      </h4>
+    </div>
+    <div id="nonb" class="panel-collapse collapse">
+      <div class="panel-body">
+<ul>
+In addition to the blocking collective latency tests mentioned above, we
+provide several non-blocking collectives (NBC): MPI_Iallgather, MPI_Iallgatherv, 
+MPI_Iallreduce, MPI_Ialltoall, MPI_Ialltoallv, MPI_Ialltoallw, MPI_Ibarrier, MPI_Ibcast,
+MPI_Igather, MPI_Igatherv, MPI_Ireduce, MPI_Iscatter, and MPI_Iscatterv.
+These evaluate the same metrics as the blocking operations as well as the 
+additional metric `overlap'.  This is defined as the amount of computation that can be
+performed while the communication progresses in the background.
+These benchmarks have the additional options:
+"-t" set the number of MPI_Test() calls during the dummy computation, set
+     CALLS to 100, 1000, or any number &gt; 0. 
+"-r" set the target for dummy computation that imitates the effect of useful
+computation that can be overlapped with the communication, as we provide CUDA-Aware support for NBC as well, this option can be set to CPU, GPU, or
+BOTH.
+</ul>
+<ul>
+
+<li>osu_iallgather     - MPI_Iallgather Latency Test</li>
+<li>osu_iallgatherv    - MPI_Iallgatherv Latency Test</li>
+<li>osu_iallreduce     - MPI_Iallreduce Latency Test</li>
+<li>osu_ialltoall      - MPI_Ialltoall Latency Test</li>
+<li>osu_ialltoallv     - MPI_Ialltoallv Latency Test</li>
+<li>osu_ialltoallw     - MPI_Ialltoallw Latency Test</li>
+<li>osu_ibarrier       - MPI_Ibarrier Latency Test</li>
+<li>osu_ibcast         - MPI_Ibcast Latency Test</li>
+<li>osu_igather        - MPI_Igather Latency Test</li>
+<li>osu_igatherv       - MPI_Igatherv Latency Test</li>
+<li>osu_ireduce        - MPI_Ireduce Latency Test</li>
+<li>osu_iscatter       - MPI_Iscatter Latency Test</li>
+<li>osu_iscatterv      - MPI_Iscatterv Latency Test</li>
+</ul>
+
+</div>
+    </div>
+  </div>
+<div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion5" href="#ones">
+        One-sided MPI Benchmarks</a>
+      </h4>
+    </div>
+    <div id="ones" class="panel-collapse collapse">
+      <div class="panel-body">
+<ul>
+<li><strong>osu_put_latency</strong> - Latency Test for Put with Active/Passive Synchronization</li>
+The put latency benchmark includes window initialization operations
+(MPI_Win_create, MPI_Win_allocate and MPI_Win_create_dynamic) and 
+synchronization operations (MPI_Win_lock/unlock, MPI_Win_flush, 
+MPI_Win_flush_local, MPI_Win_lock_all/unlock_all,
+MPI_Win_Post/Start/Complete/Wait and MPI_Win_fence). For active synchronization,
+suppose users run with MPI_Win_Post/Start/Complete/Wait, the origin process calls 
+MPI_Put to directly place data of a certain size in the remote process's window 
+and then waiting on a synchronization call (MPI_Win_complete) for completion. The remote
+process participates in synchronization with MPI_Win_post and
+MPI_Win_wait calls. Several iterations of this test is carried
+out and the average put latency numbers is reported. The latency includes
+the synchronization time also. For passive synchronization, suppose users run with
+MPI_Win_lock/unlock, the origin process calls MPI_Win_lock to lock the
+target process's window and calls MPI_Put to directly place data of certain 
+size in the window. Then it calls MPI_Win_unlock to ensure completion of the 
+Put and release lock on the window. This is carried out for several iterations and the
+average time for MPI_Lock + MPI_Put + MPI_Unlock calls is measured. The default
+window initialization and synchronization operations are MPI_Win_allocate and
+MPI_Win_flush. The benchmark offers the following options: 
+"-w create"       use MPI_Win_create to create an MPI Window object. 
+"-w allocate"     use MPI_Win_allocate to create an MPI Window object.
+"-w dynamic"      use MPI_Win_create_dynamic to create an MPI Window object.
+"-s lock"         use MPI_Win_lock/unlock synchronizations calls.
+"-s flush"        use MPI_Win_flush synchronization call.
+"-s flush_local"  use MPI_Win_flush_local synchronization call.
+"-s lock_all"     use MPI_Win_lock_all/unlock_all synchronization calls.
+"-s pscw"         use Post/Start/Complete/Wait synchronization calls.
+"-s fence"        use MPI_Win_fence synchronization call.
+"-x"              can be used to set the number of warmup iterations to
+                  skip for each message length.
+"-i"              can be used to set the number of iterations to run for
+                  each message length.
+
+<li><strong>osu_get_latency</strong> - Latency Test for Get with Active/Passive Synchronization</li>
+The get latency benchmark includes window initialization operations
+(MPI_Win_create, MPI_Win_allocate and MPI_Win_create_dynamic) and 
+synchronization operations (MPI_Win_lock/unlock, MPI_Win_flush, 
+MPI_Win_flush_local, MPI_Win_lock_all/unlock_all,
+MPI_Win_Post/Start/Complete/Wait and MPI_Win_fence). For active synchronization,
+suppose users run with MPI_Win_Post/Start/Complete/Wait, the origin
+process calls MPI_Get to directly fetch data of a certain size from the
+target process's window into a local buffer. It then waits on a
+synchronization call (MPI_Win_complete) for local completion of the Gets. 
+The remote process participates in synchronization with MPI_Win_post and
+MPI_Win_wait calls. Several iterations of this test is carried
+out and the average get latency numbers is reported. The latency includes
+the synchronization time also. For passive synchronization, suppose users run
+with MPI_Win_lock/unlock, the origin process calls MPI_Win_lock to lock the 
+target process's window and calls MPI_Get to directly read data of certain 
+size from the window. Then it calls MPI_Win_unlock to ensure completion of the 
+Get and releases lock on remote window. This is carried out for several iterations and the
+average time for MPI_Lock + MPI_Get + MPI_Unlock calls is measured. 
+The default window initialization and synchronization operations are 
+MPI_Win_allocate and MPI_Win_flush. The benchmark offers the following options: 
+"-w create"       use MPI_Win_create to create an MPI Window object.
+"-w allocate "    use MPI_Win_allocate to create an MPI Window object.
+"-w dynamic"      use MPI_Win_create_dynamic to create an MPI Window object.
+"-s lock"         use MPI_Win_lock/unlock synchronizations calls.
+"-s flush"        use MPI_Win_flush synchronization call.
+"-s flush_local"  use MPI_Win_flush_local synchronization call.
+"-s lock_all"     use MPI_Win_lock_all/unlock_all synchronization calls.
+"-s pscw"         use Post/Start/Complete/Wait synchronization calls. 
+"-s fence"        use MPI_Win_fence synchronization call.
+                        
+<li><strong>osu_put_bw</strong> - Bandwidth Test for Put with Active/Passive Synchronization</li>
+The put bandwidth benchmark includes window initialization operations
+(MPI_Win_create, MPI_Win_allocate and MPI_Win_create_dynamic) and 
+synchronization operations (MPI_Win_lock/unlock, MPI_Win_flush, 
+MPI_Win_flush_local, MPI_Win_lock_all/unlock_all,
+MPI_Win_Post/Start/Complete/Wait and MPI_Win_fence). For active synchronization,
+suppose users run with MPI_Win_Post/Start/Complete/Wait, the test
+is carried out by the origin process calling a fixed number of
+back-to-back MPI_Puts on remote window and then waiting on a
+synchronization call (MPI_Win_complete) for their completion. The remote
+process participates in synchronization with MPI_Win_post and
+MPI_Win_wait calls. This process is repeated for several iterations and
+the bandwidth is calculated based on the elapsed time and the number of
+bytes put by the origin process. For passive synchronization, suppose users run
+with MPI_Win_lock/unlock, the origin process calls MPI_Win_lock to lock the 
+target process's window and calls a fixed number of back-to-back MPI_Puts to 
+directly place data in the window. Then it calls MPI_Win_unlock to ensure 
+completion of the Puts and release lock on remote window. This process is repeated for
+several iterations and the bandwidth is calculated based on the elapsed
+time and the number of bytes put by the origin process. The default window 
+initialization and synchronization operations are MPI_Win_allocate and MPI_Win_flush. 
+The benchmark offers the following options: 
+"-w create"       use MPI_Win_create to create an MPI Window object.
+"-w allocate"     use MPI_Win_allocate to create an MPI Window object.
+"-w dynamic"      use MPI_Win_create_dynamic to create an MPI Window object.
+"-s lock"         use MPI_Win_lock/unlock synchronizations calls.
+"-s flush"        use MPI_Win_flush synchronization call.
+"-s flush_local"  use MPI_Win_flush_local synchronization call.
+"-s lock_all"     use MPI_Win_lock_all/unlock_all synchronization calls.
+"-s pscw"         use Post/Start/Complete/Wait synchronization calls.
+"-s fence"        use MPI_Win_fence synchronization call.
+
+<li><strong>osu_get_bw</strong> - Bandwidth Test for Get with Active/Passive Synchronization</li>
+The get bandwidth benchmark includes window initialization operations
+(MPI_Win_create, MPI_Win_allocate and MPI_Win_create_dynamic) and 
+synchronization operations (MPI_Win_lock/unlock, MPI_Win_flush, 
+MPI_Win_flush_local, MPI_Win_lock_all/unlock_all,
+MPI_Win_Post/Start/Complete/Wait and MPI_Win_fence). For active synchronization,
+suppose users run with MPI_Win_Post/Start/Complete/Wait, the test
+is carried out by origin process calling a fixed number of back-to-back
+MPI_Gets and then waiting on a synchronization call (MPI_Win_complete)
+for their completion. The remote process participates in synchronization
+with MPI_Win_post and MPI_Win_wait calls. This process is repeated for
+several iterations and the bandwidth is calculated based on the elapsed
+time and the number of bytes received by the origin process. For passive 
+synchronization, suppose users run with MPI_Win_lock/unlock, the origin 
+process calls MPI_Win_lock to lock the target
+process's window and calls a fixed number of back-to-back MPI_Gets to 
+directly get data from the window. Then it calls MPI_Win_unlock to ensure 
+completion of the Gets and release lock on the window. This process is 
+repeated for several iterations and the bandwidth is calculated based on 
+the elapsed time and the number of bytes read by the origin process. 
+The default window initialization and synchronization operations are 
+MPI_Win_allocate and MPI_Win_flush. The benchmark offers the following options: 
+"-w create"      use MPI_Win_create to create an MPI Window object.
+"-w allocate"    use MPI_Win_allocate to create an MPI Window object.
+"-w dynamic"     use MPI_Win_create_dynamic to create an MPI Window object.
+"-s lock"        use MPI_Win_lock/unlock synchronizations calls.
+"-s flush"       use MPI_Win_flush synchronization call.
+"-s flush_local  use MPI_Win_flush_local synchronization call.
+"-s lock_all     use MPI_Win_lock_all/unlock_all synchronization calls.
+"-s pscw         use Post/Start/Complete/Wait synchronization calls.
+"-s fence        use MPI_Win_fence synchronization.
+
+<li><strong>osu_put_bibw</strong> - Bi-directional Bandwidth Test for Put with Active Synchronization</li>
+The put bi-directional bandwidth benchmark includes window initialization operations 
+(MPI_Win_create, MPI_Win_allocate and MPI_Win_create_dynamic) and synchronization 
+operations (MPI_Win_Post/Start/Complete/Wait and MPI_Win_fence). 
+This test is similar to the bandwidth test, except that both the processes
+involved send out a fixed number of back-to-back MPI_Puts and wait for their
+completion. This test measures the maximum sustainable aggregate 
+bandwidth by two processes. The default window initialization and synchronization 
+operations are MPI_Win_allocate and MPI_Win_Post/Start/Complete/Wait. The benchmark 
+offers the following options: 
+"-w create"       use MPI_Win_create to create an MPI Window object.
+"-w allocate"     use MPI_Win_allocate to create an MPI Window object.
+"-w dynamic"      use MPI_Win_create_dynamic to create an MPI Window object.
+"-s pscw"         use Post/Start/Complete/Wait synchronization calls.
+"-s fence"        use MPI_Win_fence synchronization call.
+
+<li><strong>osu_acc_latency</strong> - Latency Test for Accumulate with Active/Passive Synchronization</li>
+The accumulate latency benchmark includes window initialization operations
+(MPI_Win_create, MPI_Win_allocate and MPI_Win_create_dynamic) and 
+synchronization operations (MPI_Win_lock/unlock, MPI_Win_flush, 
+MPI_Win_flush_local, MPI_Win_lock_all/unlock_all,
+MPI_Win_Post/Start/Complete/Wait and MPI_Win_fence). For active synchronization,
+suppose users run with MPI_Win_Post/Start/Complete/Wait, the origin 
+process calls MPI_Accumulate to combine data from the local buffer with
+the data in the remote window and store it in the remote window. The
+combining operation used in the test is MPI_SUM. The origin process then
+waits on a synchronization call (MPI_Win_complete) for completion
+of the operations. The remote process waits on a MPI_Win_wait call. Several 
+iterations of this test are carried out and the average accumulate latency 
+number is obtained. The latency includes the synchronization time also. 
+For passive synchronization, suppose users run with
+MPI_Win_lock/unlock, the origin process calls MPI_Win_lock to lock the
+target process's window and calls MPI_Accumulate to combine data from a 
+local buffer with the data in the remote window and store it in the remote window. 
+Then it calls MPI_Win_unlock to ensure completion of the Accumulate and release
+lock on the window. This is carried out for several iterations and the
+average time for MPI_Lock + MPI_Accumulate + MPI_Unlock calls is
+measured. The default window initialization and synchronization operations are 
+MPI_Win_allocate and MPI_Win_flush. The benchmark offers the following options: 
+"-w create"       use MPI_Win_create to create an MPI Window object.
+"-w allocate"     use MPI_Win_allocate to create an MPI Window object.
+"-w dynamic"      use MPI_Win_create_dynamic to create an MPI Window object.
+"-s lock"         use MPI_Win_lock/unlock synchronizations calls.
+"-s flush"        use MPI_Win_flush synchronization call.
+"-s flush_local"  use MPI_Win_flush_local synchronization call.
+"-s lock_all"     use MPI_Win_lock_all/unlock_all synchronization calls.
+"-s pscw"         use Post/Start/Complete/Wait synchronization calls.
+"-s fence"        use MPI_Win_fence synchronization call.
+
+<li><strong>osu_cas_latency</strong> - Latency Test for Compare and Swap with Active/Passive Synchronization</li>
+The Compare_and_swap latency benchmark includes window initialization operations
+(MPI_Win_create, MPI_Win_allocate and MPI_Win_create_dynamic) and 
+synchronization operations (MPI_Win_lock/unlock, MPI_Win_flush, 
+MPI_Win_flush_local, MPI_Win_lock_all/unlock_all,
+MPI_Win_Post/Start/Complete/Wait and MPI_Win_fence). For active synchronization,
+suppose users run with MPI_Win_Post/Start/Complete/Wait,the origin process 
+calls MPI_Compare_and_swap to place one element from  origin buffer to target buffer. 
+The initial value in the target buffer is returned to the calling process. The origin process then
+waits on a synchronization call (MPI_Win_complete) for local completion
+of the operations. The remote process waits on a MPI_Win_wait call. Several 
+iterations of this test are carried out and the average Compare_and_swap latency 
+number is obtained. The latency includes the synchronization time also. 
+For passive synchronization, suppose users run with
+MPI_Win_lock/unlock, the origin process calls MPI_Win_lock to lock the
+target process's window and calls MPI_Compare_and_swap to place one element 
+from  origin buffer to target buffer. The initial value in the target buffer 
+is returned to the calling process. Then it calls MPI_Win_flush to ensure completion of
+the Compare_and_swap. In the end, it calls MPI_Win_unlock to release lock
+on the window. This is carried out for several iterations and the average
+time for MPI_Compare_and_swap + MPI_Win_flush calls is measured. The default
+window initialization and synchronization operations are MPI_Win_allocate 
+and MPI_Win_flush. The benchmark offers the following options: 
+"-w create"       use MPI_Win_create to create an MPI Window object.
+"-w allocate"     use MPI_Win_allocate to create an MPI Window object.
+"-w dynamic"      use MPI_Win_create_dynamic to create an MPI Window object.
+"-s lock"         use MPI_Win_lock/unlock synchronizations calls.
+"-s flush"        use MPI_Win_flush synchronization call.
+"-s flush_local"  use MPI_Win_flush_local synchronization call.
+"-s lock_all"     use MPI_Win_lock_all/unlock_all synchronization calls.
+"-s pscw"         use Post/Start/Complete/Wait synchronization calls.
+"-s fence"        use MPI_Win_fence synchronization call.
+
+<li><strong>osu_fop_latency</strong> - Latency Test for Fetch and Op with Active/Passive Synchronization</li>
+The Fetch_and_op latency benchmark includes window initialization operations
+(MPI_Win_create, MPI_Win_allocate and MPI_Win_create_dynamic) and 
+synchronization operations (MPI_Win_lock/unlock, MPI_Win_flush, 
+MPI_Win_flush_local, MPI_Win_lock_all/unlock_all,
+MPI_Win_Post/Start/Complete/Wait and MPI_Win_fence). For active synchronization,
+suppose users run with MPI_Win_Post/Start/Complete/Wait, the origin process calls 
+MPI_Fetch_and_op to increase the element in target buffer by 1. The initial value 
+from the target buffer is returned to the calling process. The origin process 
+waits on a synchronization call (MPI_Win_complete) for completion of the 
+operations. The remote process waits on a MPI_Win_wait call. Several 
+iterations of this test are carried out and the average Fetch_and_op latency 
+number is obtained. The latency includes the synchronization time also. 
+For passive synchronization, suppose users run with
+MPI_Win_lock/unlock, the origin process calls MPI_Win_lock to lock the
+target process's window and calls MPI_Compare_and_swap to place one element 
+from  origin buffer to target buffer. The initial value in the target buffer 
+is returned to the calling process. Then it calls MPI_Win_flush to ensure completion of
+the Compare_and_swap. In the end, it calls MPI_Win_unlock to release lock
+on the window. This is carried out for several iterations and the average
+time for MPI_Compare_and_swap + MPI_Win_flush calls is measured. The default
+window initialization and synchronization operations are MPI_Win_allocate 
+and MPI_Win_flush. The benchmark offers the following options: 
+"-w create"       use MPI_Win_create to create an MPI Window object.
+"-w allocate"     use MPI_Win_allocate to create an MPI Window object.
+"-w dynamic"      use MPI_Win_create_dynamic to create an MPI Window object.
+"-s lock"         use MPI_Win_lock/unlock synchronizations calls.
+"-s flush"        use MPI_Win_flush synchronization call.
+"-s flush_local"  use MPI_Win_flush_local synchronization call.
+"-s lock_all"     use MPI_Win_lock_all/unlock_all synchronization calls.
+"-s pscw"         use Post/Start/Complete/Wait synchronization calls.
+"-s fence"        use MPI_Win_fence synchronization call.
+
+<li><strong>osu_get_acc_latency</strong> - Latency Test for Get_accumulate with Active/Passive Synchronization</li>
+The Get_accumulate latency benchmark includes window initialization operations
+(MPI_Win_create, MPI_Win_allocate and MPI_Win_create_dynamic) and 
+synchronization operations (MPI_Win_lock/unlock, MPI_Win_flush, 
+MPI_Win_flush_local, MPI_Win_lock_all/unlock_all,
+MPI_Win_Post/Start/Complete/Wait and MPI_Win_fence). For active synchronization,
+suppose users run with MPI_Win_Post/Start/Complete/Wait, the origin process 
+calls MPI_Get_accumulate to combine data from the local buffer with
+the data in the remote window and store it in the remote window. The
+combining operation used in the test is MPI_SUM. The initial value from the
+target buffer is returned to the calling process. The origin process
+waits on a synchronization call (MPI_Win_complete) for local completion
+of the operations. The remote process waits on a MPI_Win_wait call. Several 
+iterations of this test are carried out and the average get accumulate latency 
+number is obtained. The latency includes the synchronization time also. 
+For passive synchronization, suppose users run with
+MPI_Win_lock/unlock, the origin process calls MPI_Win_lock to lock the
+target process's window and calls MPI_Get_accumulate to combine data from a 
+local buffer with the data in the remote window and store it in the remote window. 
+The initial value from the target buffer is returned to the calling process.
+Then it calls MPI_Win_unlock to ensure completion of the Get_accumulate and release
+lock on the window. This is carried out for several iterations and the
+average time for MPI_Lock + MPI_Get_accumulate + MPI_Unlock calls is
+measured. The default window initialization and synchronization operations are 
+MPI_Win_allocate and MPI_Win_flush. The benchmark offers the following options: 
+"-w create"         use MPI_Win_create to create an MPI Window object.
+"-w allocate"       use MPI_Win_allocate to create an MPI Window object.
+"-w dynamic"        use MPI_Win_create_dynamic to create an MPI Window object.
+"-s lock"           use MPI_Win_lock/unlock synchronizations calls.
+"-s flush"          use MPI_Win_flush synchronization call.
+"-s flush_local"    use MPI_Win_flush_local synchronization call.
+"-s lock_all"       use MPI_Win_lock_all/unlock_all synchronization calls.
+"-s pscw"           use Post/Start/Complete/Wait synchronization calls.
+"-s fence"          use MPI_Win_fence synchronization call.
+</ul>
+
+ </div>
+    </div>
+  </div>
+<div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion5" href="#start">
+        Startup MPI Benchmarks</a>
+      </h4>
+    </div>
+    <div id="start" class="panel-collapse collapse">
+      <div class="panel-body">
+<ul>
+    <li><strong>osu_init</strong> - This benchmark measures the minimum,
+    maximum, and average time each process takes to complete MPI_Init.</li>
+    <li><strong>osu_hello</strong> - This benchmark measures the time it
+    takes for all processes to execute MPI_Init + MPI_Finalize.</li>
+</ul>
+</div>
+    </div>
+  </div>
+</div> </div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion3" href="#device">
+        Device-based Benchmarks</a>
+      </h4>
+    </div>
+    <div id="device" class="panel-collapse collapse">
+      <div class="panel-body"><div class="panel-group" id="accordion4">
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion4" href="#device1">
+        CUDA, ROCm, and OpenACC Extensions to OSU Micro Benchmarks</a>
+      </h4>
+    </div>
+    <div id="device1" class="panel-collapse collapse">
+      <div class="panel-body">
+<ul>
+    <li>The CUDA extensions are enabled when the benchmark suite is configured
+    with --enable-cuda option.  The OpenACC extensions are enabled when
+    --enable-openacc is specified.  Whether a process allocates its 
+    communication buffers on the GPU device or on the host can be controlled at
+    run-time.
+    </li>
+    <li>Each of the pt2pt benchmarks takes two input parameters. The first
+    parameter indicates the location of the buffers at rank 0 and the second
+    parameter indicates the location of the buffers at rank 1. The value of
+    each of these parameters can be either 'H' or 'D' to indicate if the
+    buffers are to be on the host or on the device respectively. When no
+    parameters are specified, the buffers are allocated on the host.
+    </li>
+    <li>The collective benchmarks will use buffers allocated on the device if
+    the -d option is used otherwise the buffers will be allocated on the host.
+    </li>
+    <li>The non-blocking collective benchmarks can also use -t for MPI_Test()
+calls and -r option for setting the target of dummy computation.
+    </li>
+    <li>The following benchmarks have been extended to evaluate performance of 
+        MPI communication from and to buffers on NVIDIA and AMD GPU devices. 
+        <ul>
+            <li>osu_bibw           - Bidirectional Bandwidth Test</li>
+            <li>osu_bw             - Bandwidth Test</li>
+            <li>osu_latency        - Latency Test</li>
+            <li>osu_mbw_mr         - Multiple Bandwidth / Message Rate Test</li>
+            <li>osu_multi_lat      - Multi-pair Latency Test</li>
+            <li>osu_put_latency    - Latency Test for Put</li>
+            <li>osu_get_latency    - Latency Test for Get</li>
+            <li>osu_put_bw         - Bandwidth Test for Put</li>
+            <li>osu_get_bw         - Bandwidth Test for Get</li>
+            <li>osu_put_bibw       - Bidirectional Bandwidth Test for Put</li>
+            <li>osu_acc_latency    - Latency Test for Accumulate</li>
+            <li>osu_cas_latency    - Latency Test for Compare and Swap</li>
+            <li>osu_fop_latency    - Latency Test for Fetch and Op</li>
+            <li>osu_allgather      - MPI_Allgather Latency Test</li>
+            <li>osu_allgatherv     - MPI_Allgatherv Latency Test</li>
+            <li>osu_allreduce      - MPI_Allreduce Latency Test</li>
+            <li>osu_alltoall       - MPI_Alltoall Latency Test</li>
+            <li>osu_alltoallv      - MPI_Alltoallv Latency Test</li>
+            <li>osu_bcast          - MPI_Bcast Latency Test</li>
+            <li>osu_gather         - MPI_Gather Latency Test</li>
+            <li>osu_gatherv        - MPI_Gatherv Latency Test</li>
+            <li>osu_reduce         - MPI_Reduce Latency Test</li>
+            <li>osu_reduce_scatter - MPI_Reduce_scatter Latency Test</li>
+            <li>osu_scatter        - MPI_Scatter Latency Test</li>
+            <li>osu_scatterv       - MPI_Scatterv Latency Test</li>
+            <li>osu_iallgather     - MPI_Iallgather Latency Test</li>
+            <li>osu_iallgatherv    - MPI_Iallgatherv Latency Test</li>
+            <li>osu_iallreduce     - MPI_Iallreduce Latency Test</li>
+            <li>osu_ialltoall      - MPI_Ialltoall Latency Test</li>
+            <li>osu_ialltoallv     - MPI_Ialltoallv Latency Test</li>
+            <li>osu_ialltoallw     - MPI_Ialltoallw Latency Test</li>
+            <li>osu_ibcast         - MPI_Ibcast Latency Test</li>
+            <li>osu_igather        - MPI_Igather Latency Test</li>
+            <li>osu_igatherv       - MPI_Igatherv Latency Test</li>
+            <li>osu_ireduce        - MPI_Ireduce Latency Test</li>
+            <li>osu_iscatter       - MPI_Iscatter Latency Test</li>
+            <li>osu_iscatterv      - MPI_Iscatterv Latency Test</li>
+       </ul>
+    </li>
+</div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion4" href="#device2">
+        Support for CUDA Managed Memory</a>
+      </h4>
+    </div>
+    <div id="device2" class="panel-collapse collapse">
+      <div class="panel-body">
+<ul>
+In addition to support for communications to and from GPU memories allocated
+using CUDA or OpenACC, we now provide additional capability of performing 
+communications to and from buffers allocated using the CUDA Managed Memory
+concept. CUDA Managed (or Unified) Memory allows applications to allocate 
+memory on either CPU or GPU memories using the cudaMallocManaged() call. This
+allows user oblivious transfer of the memory buffer between the CPU or GPU.
+Currently, we offer benchmarking with CUDA Managed Memory using the tests 
+mentioned above. These benchmarks have additional options:
+"M" allocates a send or receive buffer as managed for point to point communication.
+"-d managed" uses managed memory buffers to perform collective communications.
+</ul> 
+<ul>The following benchmarks have been extended to evaluate performance of 
+        MPI communication from and to buffers allocated using CUDA Managed Memory. 
+        <ul>
+            <li>osu_bibw            - Bidirectional Bandwidth Test</li>
+            <li>osu_bw              - Bandwidth Test</li>
+            <li>osu_latency         - Latency Test</li>
+            <li>osu_mbw_mr          - Multiple Bandwidth / Message Rate Test</li>
+            <li>osu_multi_lat       - Multi-pair Latency Test</li>
+            <li>osu_allgather       - MPI_Allgather Latency Test</li>
+            <li>osu_allgatherv      - MPI_Allgatherv Latency Test</li>
+            <li>osu_allreduce       - MPI_Allreduce Latency Test</li>
+            <li>osu_alltoall        - MPI_Alltoall Latency Test</li>
+            <li>osu_alltoallv       - MPI_Alltoallv Latency Test</li>
+            <li>osu_bcast           - MPI_Bcast Latency Test</li>
+            <li>osu_gather          - MPI_Gather Latency Test</li>
+            <li>osu_gatherv         - MPI_Gatherv Latency Test</li>
+            <li>osu_reduce          - MPI_Reduce Latency Test</li>
+            <li>osu_reduce_scatter  - MPI_Reduce_scatter Latency Test</li>
+            <li>osu_scatter         - MPI_Scatter Latency Test</li>
+            <li>osu_scatterv        - MPI_Scatterv Latency Test</li>
+        </ul>
+     </ul>
+</ul>
+</div>
+    </div>
+  </div>
+</div></div>
+    </div>
+  </div>
+</div>
+
+
+
+</div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion1" href="#opensh">
+        OPENSHMEM Benchmarks</a>
+      </h4>
+    </div>
+    <div id="opensh" class="panel-collapse collapse">
+      <div class="panel-body">
+<div class="panel-group" id="accordion6">
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion6" href="#p2p0">
+       Point-to-Point OpenSHMEM Benchmarks</a>
+      </h4>
+    </div>
+    <div id="p2p0" class="panel-collapse collapse">
+      <div class="panel-body">
+<ul>
+
+<li><strong>osu_oshm_put</strong> - Latency Test for OpenSHMEM Put Routine</li>
+This benchmark measures latency of a shmem putmem operation for different
+data sizes. The user is required to select whether the communication
+buffers should be allocated in global memory or heap memory, through a
+parameter. The test requires exactly two PEs. PE 0 issues shmem putmem to
+write data at PE 1 and then calls shmem quiet. This is repeated for a
+fixed number of iterations, depending on the data size. The average
+latency per iteration is reported. A few warm-up iterations are run
+without timing to ignore any start-up overheads.  Both PEs call shmem
+barrier all after the test for each message size.
+
+<li><strong>osu_oshm_put_nb</strong> - Latency Test for OpenSHMEM Non-blocking Put Routine</li>
+This benchmark measures the non-blocking latency of a shmem putmem_nbi 
+operation for different data sizes. The user is required to select 
+whether the communication buffers should be allocated in global 
+memory or heap memory, through a parameter. The test requires exactly 
+two PEs. PE 0 issues shmem putmem_nbi to write data at PE 1 and then calls 
+shmem quiet. This is repeated for a fixed number of iterations, depending 
+on the data size. The average latency per iteration is reported. 
+A few warm-up iterations are run without timing to ignore any start-up 
+overheads. Both PEs call shmem barrier all after the test for each message size.
+
+<li><strong>osu_oshm_get</strong> - Latency Test for OpenSHMEM Get Routine</li>
+This benchmark is similar to the one above except that PE 0 does a shmem
+getmem operation to read data from PE 1 in each iteration. The average
+latency per iteration is reported.
+
+<li><strong>osu_oshm_get_nb</strong> -  Latency Test for OpenSHMEM Non-blocking Get Routine</li>
+This benchmark is similar to the one above except that PE 0 does a shmem
+getmem_nbi operation to read data from PE 1 in each iteration. The average
+latency per iteration is reported.
+
+<li><strong>osu_oshm_put_mr</strong> - Message Rate Test for OpenSHMEM Put Routine</li>
+This benchmark measures the aggregate uni-directional operation rate of
+OpenSHMEM Put between pairs of PEs, for different data sizes. The user
+should select for communication buffers to be in global memory and heap
+memory as with the earlier benchmarks. This test requires number of PEs
+to be even. The PEs are paired with PE 0 pairing with PE n/2 and so on,
+where n is the total number of PEs. The first PE in each pair issues
+back-to-back shmem putmem operations to its peer PE. The total time for
+the put operations is measured and operation rate per second is reported.
+All PEs call shmem barrier all after the test for each message size.
+
+<li><strong>osu_oshm_put_mr_nb</strong> - Message Rate Test for Non-blocking OpenSHMEM Put Routine</li>
+This benchmark measures the aggregate uni-directional operation rate of
+OpenSHMEM Non-blocking Put between pairs of PEs, for different data sizes. 
+The user should select for communication buffers to be in global memory 
+and heap memory as with the earlier benchmarks. This test requires number 
+of PEs to be even. The PEs are paired with PE 0 pairing with PE n/2 and so on,
+where n is the total number of PEs. The first PE in each pair issues
+back-to-back shmem putmem_nbi operations to its peer PE until the window
+size. A call to shmem_quite is placed after the window loop to ensure
+completion of the issued operations. The total time for the non-blocking 
+put operations is measured and operation rate per second is reported.
+All PEs call shmem barrier all after the test for each message size.
+
+<li><strong>osu_oshm_get_mr_nb</strong> - Message Rate Test for Non-blocking OpenSHMEM Get Routine</li>
+This benchmark measures the aggregate uni-directional operation rate of
+OpenSHMEM Non-blocking Get between pairs of PEs, for different data sizes. 
+The user should select for communication buffers to be in global memory 
+and heap memory as with the earlier benchmarks. This test requires number 
+of PEs to be even. The PEs are paired with PE 0 pairing with PE n/2 and so on,
+where n is the total number of PEs. The first PE in each pair issues
+back-to-back shmem getmem_nbi operations to its peer PE until the window
+size. A call to shmem_quite is placed after the window loop to ensure
+completion of the issued operations. The total time for the non-blocking 
+put operations is measured and operation rate per second is reported.
+All PEs call shmem barrier all after the test for each message size.
+
+
+<li><strong>osu_oshm_put_overlap</strong> - Non-blocking Message Rate Overlap Test
+This benchmark measures the aggregate uni-directional operations rate
+overlap for OpenSHMEM Put between paris of PEs, for different data sizes.
+The user should select for communication buffers to be in global memory
+and heap memory as with the earlier benchmarks. This test requires number
+of PEs. The benchmarks prints statistics for different phases of
+communication, computation and overlap in the end.
+
+<li><strong>osu_oshm_atomics</strong> - Latency and Operation Rate Test for OpenSHMEM Atomics Routines
+This benchmark measures the performance of atomic fetch-and-operate and
+atomic operate routines supported in OpenSHMEM for the integer
+and long datatypes. The buffers can be selected to be in heap memory or global
+memory. The PEs are paired like in the case of Put Operation Rate
+benchmark and the first PE in each pair issues back-to-back atomic
+operations of a type to its peer PE. The average latency per atomic
+operation and the aggregate operation rate are reported.  This is
+repeated for each of fadd, finc, add, inc, cswap, swap, set, and fetch 
+routines.
+
+</ul>
+</div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion6" href="#collo">
+        Collective OpenSHMEM Benchmarks</a>
+      </h4>
+    </div>
+    <div id="collo" class="panel-collapse collapse">
+      <div class="panel-body">
+<ul>
+    <li>Collective Latency Tests</li>
+    The latest OMB Version includes benchmarks for various OpenSHMEM
+    collective operations (shmem_collect, shmem_fcollect, shmem_broadcast, 
+    shmem_reduce and shmem_barrier). These benchmarks work in the following 
+    manner. Suppose users run the osu_oshm_broadcast benchmark with N 
+    processes, the benchmark measures the min, max and the average latency of 
+    the shmem_broadcast collective operation across N processes, for various
+    message lengths, over a large number of iterations. In the default
+    version, these benchmarks report the average latency for each message
+    length. Additionally, the benchmarks offer the following options:
+    "-f" can be used to report additional statistics of the benchmark,
+         such as min and max latencies and the number of iterations.
+    "-m" option can be used to set the maximum message length to be used in a
+         benchmark. In the default version, the benchmarks report the
+         latencies for up to 1MB message lengths.
+    "-i" can be used to set the number of iterations to run for each message
+         length.
+</ul>
+<ul>
+    <li>osu_oshm_collect   - OpenSHMEM Collect Latency Test</li>
+    <li>osu_oshm_fcollect  - OpenSHMEM FCollect Latency Test</li>
+    <li>osu_oshm_broadcast - OpenSHMEM Broadcast Latency Test</li>
+    <li>osu_oshm_reduce    - OpenSHMEM Reduce Latency Test</li>
+    <li>osu_oshm_barrier   - OpenSHMEM Barrier Latency Test</li>
+</ul>
+
+</div>
+    </div>
+  </div>
+
+</div>
+</div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion1" href="#upc">
+        UPC Benchmarks</a>
+      </h4>
+    </div>
+    <div id="upc" class="panel-collapse collapse">
+      <div class="panel-body">
+<div class="panel-group" id="accordion7">
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion7" href="#p2pu">
+       Point-to-Point Unified Parallel C (UPC) Benchmarks</a>
+      </h4>
+    </div>
+    <div id="p2pu" class="panel-collapse collapse">
+      <div class="panel-body">
+<ul>
+
+<li><strong>osu_upc_memput</strong> - Latency Test for UPC Put Routine</li>
+This benchmark measures the latency of UPC put operation between multiple UPC
+threads. In this benchmark, UPC threads with ranks less than (THREADS/2)
+issue UPC memput operations to peer UPC threads. Peer threads are identified
+as (MYTHREAD+THREADS/2). This is repeated for a fixed number of iterations, for
+varying data sizes. The average latency per iteration is reported. A few
+warm-up iterations are run without timing to ignore any start-up overheads. All
+UPC threads call UPC barrier after the test for each message size.
+
+<li><strong>osu_upc_memget</strong> - Latency Test for UPC Get Routine</li> 
+This benchmark is similar as the UPC put benchmark that is described above.
+The difference is that the shared string handling function is upc_memget. The
+average get operation latency per iteration is reported.
+</ul>
+
+</div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion7" href="#collu">
+        Collective Unified Parallel C (UPC) Benchmarks</a>
+      </h4>
+    </div>
+    <div id="collu" class="panel-collapse collapse">
+      <div class="panel-body">
+
+
+<ul>
+    <li>Collective Latency Tests</li> The latest OMB Version includes
+    benchmarks for various UPC collective operations
+    (osu_upc_all_barrier, upc_all_broadcast, osu_upc_all_exchange,
+    osu_upc_all_gather_all, osu_upc_all_gather, osu_upc_all_reduce,
+    and osu_upc_all_scatter).  These benchmarks work in the following
+    manner. Suppose users run the osu_upc_all_broadcast benchmark with
+    N processes, the benchmark measures the min, max and the average
+    latency of the upc_all_broadcast collective operation across N
+    processes, for various message lengths, over a large number of
+    iterations. In the default version, these benchmarks report the
+    average latency for each message length. Additionally, the
+    benchmarks offer the following options:
+    "-f" can be used to report additional statistics of the benchmark,
+         such as min and max latencies and the number of iterations.
+    "-m" option can be used to set the maximum message length to be used in a
+         benchmark. In the default version, the benchmarks report the
+         latencies for up to 1MB message lengths.
+    "-i" can be used to set the number of iterations to run for each message
+         length.
+</ul>
+osu_upc_all_barrier, upc_all_broadcast, osu_upc_all_exchange, osu_upc_all_gather_all, osu_upc_all_gather, osu_upc_all_reduce, and osu_upc_all_scatter
+
+<ul>
+    <li>osu_upc_all_barrier    - UPC Barrier Latency Test</li>
+    <li>osu_upc_all_broadcast  - UPC Broadcast Latency Test</li>
+    <li>osu_upc_all_exchange   - UPC Exchange Latency Test</li>
+    <li>osu_upc_all_gather_all - UPC GatherAll Latency Test</li>
+    <li>osu_upc_all_gather     - UPC Gather Latency Test</li>
+    <li>osu_upc_all_reduce     - UPC Reduce Latency Test</li>
+    <li>osu_upc_all_scatter    - UPC Scatter Latency Test</li>
+</ul>
+</div>
+    </div>
+  </div>
+
+</div>
+
+    
+  
+
+	
+    </div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion1" href="#upcp">
+        UPC++ Benchmarks</a>
+      </h4>
+    </div>
+    <div id="upcp" class="panel-collapse collapse">
+      <div class="panel-body">
+<div class="panel-group" id="accordion8">
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion8" href="#p2pup">
+       Point-to-Point UPC++ Benchmarks</a>
+      </h4>
+    </div>
+    <div id="p2pup" class="panel-collapse collapse">
+      <div class="panel-body">
+<ul>                                                                            
+                                                                                    
+<li><strong>osu_upcxx_async_copy_put</strong> - Latency Test for UPC++ Put</li>     
+This benchmark measures the latency of async_copy (memput) operation
+between multiple UPC++ threads. In this benchmark, UPC++ threads with ranks
+less than (ranks()/2) copy data from their local memory to their peer
+thread’s memory using async_copy operation. By changing the source and destination
+buffers in async_copy, we can mimic the behavior of upc_memput and upc_memget.
+Peer threads are identified as (myrank()+ranks()/2). This is
+repeated for a fixed number of iterations, for varying data sizes. The
+average latency per iteration is reported. A few warm-up iterations are run
+without timing to ignore any start-up overheads. All UPC++ threads call
+barrier() function after the test for each message size.
+
+<li><strong>osu_upcxx_async_copy_get</strong> - Latency Test for UPC++ Get</li>     
+Similar to osu_upcxx_async_copy_put, this benchmark mimics the behavior of
+upc_memget and measures the latency of async_copy (memget) operation
+between multiple UPC++ threads. The only difference is that the source and destination
+buffers in async_copy are swapped. In this benchmark, UPC++ threads with
+ranks less than (ranks()/2) copy data from their peer thread's memory
+to their local memory using async_copy operation. The rest of the details
+are same as discussed above. The average get operation latency per
+iteration is reported.
+</ul> 
+</div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion8" href="#collup">
+        Collective UPC++ Benchmarks</a>
+      </h4>
+    </div>
+    <div id="collup" class="panel-collapse collapse">
+      <div class="panel-body">
+<ul>
+    <li>Collective Latency Tests</li> The latest OMB Version includes the
+    following benchmarks for various UPC++ collective operations (upcxx_reduce,
+    upcxx_bcast, upcxx_gather, upcxx_allgather, upcxx_alltoall,
+    upcxx_scatter). These benchmarks work in the following
+    manner. Suppose users run the osu_upcxx_bcast benchmark with
+    N processes, the benchmark measures the min, max and the average
+    latency of the upcxx_bcast collective operation across N
+    processes, for various message lengths, over a large number of
+    iterations. In the default version, these benchmarks report the
+    average latency for each message length. Additionally, the
+    benchmarks offer the following options:
+    "-f" can be used to report additional statistics of the benchmark,
+         such as min and max latencies and the number of iterations.
+    "-m" option can be used to set the maximum message length to be used in a
+         benchmark. In the default version, the benchmarks report the
+         latencies for up to 1MB message lengths.
+    "-i" can be used to set the number of iterations to run for each message
+         length.
+</ul>
+<ul>
+    <li>osu_upcxx_bcast      - UPC++ Broadcast Latency Test</li>
+    <li>osu_upcxx_reduce     - UPC++ Reduce Latency Test</li>
+    <li>osu_upcxx_allgather  - UPC++ Allgather Latency Test</li>
+    <li>osu_upcxx_gather     - UPC++ Gather Latency Test</li>
+    <li>osu_upcxx_scatter    - UPC++ Scatter Latency Test</li>
+    <li>osu_upcxx_alltoall   - UPC++ AlltoAll (exchange) Latency Test</li>
+</ul>
+
+
+</div>
+    </div>
+  </div>
+
+</div>
+</div>
+    </div>
+  </div>
+
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion1" href="#nccl">
+        NCCL Benchmarks</a>
+      </h4>
+    </div>
+    <div id="nccl" class="panel-collapse collapse">
+      <div class="panel-body">
+<div class="panel-group" id="accordion9">
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion9" href="#p2pn">
+       Point-to-Point NCCL Benchmarks</a>
+      </h4>
+    </div>
+    <div id="p2pn" class="panel-collapse collapse">
+      <div class="panel-body">
+
+<ul> 
+<li><strong>osu_nccl_latency</strong> - Latency Test </li>
+The latency tests are carried out in a ping-pong fashion. The sender
+sends a message with a certain data size to the receiver and waits for a
+reply from the receiver. The receiver receives the message from the sender
+and sends back a reply with the same data size. Many iterations of this
+ping-pong test are carried out and average one-way latency numbers are
+obtained. Non-Blocking version of NCCL functions (ncclSend and ncclRecv) are
+used in the tests.
+
+<li><strong>osu_nccl_bw</strong> - Bandwidth Test</li>
+The bandwidth tests are carried out by having the sender sending out a
+fixed number (equal to the window size) of back-to-back messages to the
+receiver and then waiting for a reply from the receiver. The receiver
+sends the reply only after receiving all these messages. This process is
+repeated for several iterations and the bandwidth is calculated based on
+the elapsed time (from the time sender sends the first message until the
+time it receives the reply back from the receiver) and the number of bytes
+sent by the sender. The objective of this bandwidth test is to determine
+the maximum sustained date rate that can be achieved at the network level.
+Thus, non-blocking version of NCCL functions (ncclSend and ncclRecv) are
+used in the test.
+
+<li><strong>osu_nccl_bibw</strong> - Bidirectional Bandwidth Test</li>
+The bidirectional bandwidth test is similar to the bandwidth test, except
+that both the nodes involved send out a fixed number of back-to-back
+messages and wait for the reply. This test measures the maximum
+sustainable aggregate bandwidth by two nodes.
+
+</ul>
+</div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion9" href="#colln">
+        Collective NCCL Benchmarks</a>
+      </h4>
+    </div>
+    <div id="colln" class="panel-collapse collapse">
+      <div class="panel-body">
+<ul>
+The latest OMB version includes benchmarks for various NCCL
+collective operations (NCCL Allgather, NCCL Allreduce, 
+NCCL Bcast, NCCL Reduce, NCCL Reduce_Scatter, NCCL Alltoall).
+These benchmarks work in the
+following manner.  Suppose users run the osu_nccl_bcast benchmark with N
+processes, the benchmark measures the min, max and the average latency of
+the NCCL Bcast collective operation across N processes, for various
+message lengths, over a large number of iterations. In the default
+version, these benchmarks report the average latency for each message
+length. Additionally, the benchmarks offer the following options:
+"-f" can be used to report additional statistics of the benchmark,
+     such as min and max latencies and the number of iterations.
+"-m" option can be used to set the minimum and maximum message length
+     to be used in a benchmark. In the default version, the benchmarks
+     report the latencies for up to 1MB message lengths. Examples:
+       -m 128    // min = default, max = 128
+       -m 2:128  // min = 2, max = 128
+       -m 2:     // min = 2, max = default
+"-x" can be used to set the number of warmup iterations to skip for each
+     message length.
+"-i" can be used to set the number of iterations to run for each message
+     length.
+"-M" can be used to set per process maximum memory consumption.  By
+     default the benchmarks are limited to 512MB allocations.
+</ul>
+
+<ul>
+<li>osu_nccl_allgather      - NCCL Allgather Latency Test</li>
+<li>osu_nccl_allreduce      - NCCL Allreduce Latency Test</li>
+<li>osu_nccl_bcast          - NCCL Bcast Latency Test</li>
+<li>osu_nccl_reduce         - NCCL Reduce Latency Test</li>
+<li>osu_nccl_reduce_scatter - NCCL Reduce_scatter Latency Test</li>
+<li>osu_nccl_alltoall       - NCCL Alltoall Latency Test</li>
+</ul>
+
+</div>
+    </div>
+  </div>
+
+</div>
+</div>
+    </div>
+  </div>
+</div>
+        </div>
+   </div> 
+</div>
+  
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">
+        Java Benchmarks</a>
+      </h4>
+    </div>
+    <div id="collapse2" class="panel-collapse collapse">
+      <div class="panel-body">
+<div class="panel-group" id="accordion10">
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion10" href="#p2pj">
+       Point-to-Point Java Bindings Benchmarks</a>
+      </h4>
+    </div>
+    <div id="p2pj" class="panel-collapse collapse">
+      <div class="panel-body">The following are the point-to-point benchmarks for Java MPI libraries such
+as MVAPICH2-J and the Open MPI Java bindings. There are separate custom
+bandwidth and bi-bandwidth benchmarks for Open MPI because the API does
+not support communicating Java arrays using non-blocking point-to-point
+primitives.
+
+
+
+<ul>
+<li><strong>OSULatency</strong> - Latency Test</li>
+<li><strong>OSUBandwidth</strong> - Bandwidth Test
+<ul>
+<li>OSUBandwidthOMPI (exclusively for the Open MPI Java bindings)</li>
+</ul>
+</li>
+<li><strong>OSUBiBandwidth</strong> - Bidirectional Bandwidth Test</li>
+<ul>
+<li>OSUBiBandwidthOMPI (exclusively for the Open MPI Java bindings)</li>
+</ul>
+<li><strong>OSUOMPIBandwidth</strong> - Bandwidth Test for Open MPI Java Bindings</li>
+<li><strong>OSUOMPIBiBandwidth</strong> - Bidirectional Bandwidth Test for Open MPI Java Bindings</li>
+</ul>
+    </div>
+  </div></div>
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion10" href="#collj">
+        Collective Java Bindings Benchmarks</a>
+      </h4>
+    </div>
+    <div id="collj" class="panel-collapse collapse">
+      <div class="panel-body">
+The following are the collective benchmarks for Java MPI libraries
+such as MVAPICH2-J and the Open MPI Java bindings. 
+<ul>
+<li><strong>OSUAllgather</strong> - MPI_Allgather Latency Test</li>
+<li><strong>OSUAllgatherv</strong> - MPI_Allgatherv Latency Test</li>
+<li><strong>OSUAllReduce</strong> - MPI_Allreduce Latency Test</li>
+<li><strong>OSUAlltoall</strong> - MPI_Alltoall Latency Test</li>
+<li><strong>OSUAlltoallv</strong> - MPI_Alltoallv Latency Test</li>
+<li><strong>OSUBarrier</strong> - MPI_Barrier Latency Test</li>
+<li><strong>OSUBcast</strong> - MPI_Bcast Latency Test</li>
+<li><strong>OSUGather</strong> - MPI_Gather Latency Test</li>
+<li><strong>OSUGatherv</strong> - MPI_Gatherv Latency Test</li>
+<li><strong>OSUReduce</strong> - MPI_Reduce Latency Test</li>
+<li><strong>OSUReduceScatter</strong> - MPI_Reduce_scatter Latency Test</li>
+<li><strong>OSUScatter</strong> - MPI_Scatter Latency Test</li>
+<li><strong>OSUScatterv</strong> - MPI_Scatterv Latency Test</li>
+</ul>
+    </div>
+  </div></div>
+
+</div>
+
+
+
+    </div>
+  </div>
+</div>
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">
+        Python Benchmarks</a>
+      </h4>
+    </div>
+    <div id="collapse3" class="panel-collapse collapse">
+      <div class="panel-body">
+The OMB Python extension offers a variety of point-to-point and collective benchmarks to evaluate communication performance of MPI-based parallel applications in Python. This extension utilizes the mpi4py library to provide Python bindings for the MPI standard. The extension supports a variety of Python buffers including NumPy, CuPy, Numba, and PyCUDA. In addition to the CPU tests, GPU benchmarks are supported by selecting the CUDA-aware buffers. Tests with serialized communicated objects are also supported by using the –pickle runtime flag. The –min and –max flags are used specify the upper and lower bounds for tested message size. The –iterations and –skip flags are used to set the number of testing and warmup iterations for each message size. To enable the Python extension, please configure OMB with the –enable-python option.
+<div class="panel-group" id="accordion11">
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion11" href="#p2ppy">
+       Point-to-Point Python Benchmarks</a>
+      </h4>
+    </div>
+    <div id="p2ppy" class="panel-collapse collapse">
+      <div class="panel-body">
+The following are the point-to-point benchmarks to evaluate performance of MPI communication in Python for both CPU and GPU using the mpi4py bindings.
+<ul>
+<li><strong>osu_latency</strong> - Latency Test</li>
+<li><strong>osu_bw</strong> - Bandwidth Test</li>
+<li><strong>osu_bibw</strong> - Bidirectional Bandwidth Test</li>
+<li><strong>osu_multi_lat</strong> - Multi-pair Latency Test</li>
+</ul>
+    </div></div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion11" href="#collpy">
+        Collective Python Benchmarks</a>
+      </h4>
+    </div>
+    <div id="collpy" class="panel-collapse collapse">
+      <div class="panel-body">
+The following are the collective benchmarks to evaluate performance of MPI communication in Python for both CPU and GPU using the mpi4py bindings.
+<ul>
+<li><strong>osu_allgather</strong> - MPI_Allgather Latency Test</li>
+<li><strong>osu_allgatherv</strong> - MPI_Allgatherv Latency Test</li>
+<li><strong>osu_allreduce</strong> - MPI_Allreduce Latency Test</li>
+<li><strong>osu_alltoall</strong> - MPI_Alltoall Latency Test</li>
+<li><strong>osu_alltoallv</strong> - MPI_Alltoallv Latency Test</li>
+<li><strong>osu_barrier</strong> - MPI_Barrier Latency Test</li>
+<li><strong>osu_bcast</strong> - MPI_Bcast Latency Test</li>
+<li><strong>osu_gather</strong> - MPI_Gather Latency Test</li>
+<li><strong>osu_gatherv</strong> - MPI_Gatherv Latency Test</li>
+<li><strong>osu_reduce</strong> - MPI_Reduce Latency Test</li>
+<li><strong>osu_reduce_scatter</strong> - MPI_Reduce_scatter Latency Test</li>
+<li><strong>osu_scatter</strong> - MPI_Scatter Latency Test</li>
+<li><strong>osu_scatterv</strong> - MPI_Scatterv Latency Test</li>
+</ul></div>
+    </div>
+  </div>
+
+</div>
+    </div>
+  </div>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+
+    
+
+
+</div>
+
+
+    </div>
+    
+
+    <div id="footer">
+      
+      <div class="container">
+        
+    <div class="container-fluid">
+        <div class="col-md-4 pull-left">
+          Contact: <a href="http://www.cse.ohio-state.edu/~panda/">Dhabaleswar K. (DK) Panda</a><br>
+          <a href="http://www.cse.ohio-state.edu/">Dept of Computer Science and Engineering</a><br>
+          2001-2024 NBCL. All rights reserved.
+        </div>
+    
+        <div class="hidden-sm col-md-2">
+    	    <a href="http://hibd.cse.ohio-state.edu/">
+    	        <img data-src="holder.js/300x200" src="/static/images/hibd_full.png" alt="HiBD Logo">
+    	    </a>
+    	</div>
+        <div class="hidden-sm col-md-2">
+    	    <a href="http://hidl.cse.ohio-state.edu/">
+    	        <img data-src="holder.js/300x200" src="/static/images/hidl-trans.png" alt="HiDL Logo">
+    	    </a>
+    	</div>
+    
+        <div class="col-md-4 pull-right text-right">
+          774 Dreese Laboratories <br />
+          2015 Neil Avenue <br />
+          Columbus, OH 43210
+        </div>
+    </div>
+
+      </div>
+      
+    </div>
+    <script src="/static/js/jquery.min.js" ></script>
+    <script src="/static/js/jquery-ui.min.js" ></script>
+    <script src="/static/js/bootstrap.js" ></script>
+    <script src="/static/js/highlight-scroll.js" ></script>
+    <script src="/static/js/generic.js" ></script>
+    
+    
+  </body>
+</html>
+

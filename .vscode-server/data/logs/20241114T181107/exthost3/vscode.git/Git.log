@@ -1,0 +1,20 @@
+2024-11-14 19:22:35.399 [info] [main] 日志级别: Info
+2024-11-14 19:22:35.399 [info] [main] 正在验证在以下位置找到的 git: "git"
+2024-11-14 19:22:35.399 [info] [main] 使用来自 "git" 的 git "1.8.3.1"
+2024-11-14 19:22:35.399 [info] [Model][doInitialScan] Initial repository scan started
+2024-11-14 19:22:35.403 [info] > git rev-parse --show-toplevel [7ms]
+2024-11-14 19:22:35.403 [info] fatal: Not a git repository (or any parent up to mount point /WORK)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+2024-11-14 19:22:35.452 [info] > git rev-parse --show-toplevel [3ms]
+2024-11-14 19:22:35.452 [info] fatal: Not a git repository (or any parent up to mount point /WORK)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+2024-11-14 19:22:35.518 [info] > git rev-parse --show-toplevel [30ms]
+2024-11-14 19:22:35.518 [info] fatal: Not a git repository (or any parent up to mount point /WORK)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+2024-11-14 19:22:35.527 [info] > git rev-parse --show-toplevel [6ms]
+2024-11-14 19:22:35.527 [info] fatal: Not a git repository (or any parent up to mount point /WORK)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+2024-11-14 19:22:35.531 [info] [Model][doInitialScan] Initial repository scan completed - repositories (0), closed repositories (0), parent repositories (0), unsafe repositories (0)
+2024-11-14 19:22:45.638 [info] > git rev-parse --show-toplevel [6ms]
+2024-11-14 19:22:45.639 [info] fatal: Not a git repository (or any parent up to mount point /WORK)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).

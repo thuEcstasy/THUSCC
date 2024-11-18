@@ -1,0 +1,22 @@
+2024-11-18 19:22:48.274 [info] Extension host with pid 24935 started
+2024-11-18 19:22:48.274 [error] Error: EEXIST: file already exists, open '/home/thuscc24team04/.vscode-server/data/User/workspaceStorage/17916b0b5a59b7765117b3edf08c6227/vscode.lock'
+2024-11-18 19:22:48.275 [info] Lock '/home/thuscc24team04/.vscode-server/data/User/workspaceStorage/17916b0b5a59b7765117b3edf08c6227/vscode.lock': Could not acquire lock, checking if the file is stale.
+2024-11-18 19:22:48.280 [info] Lock '/home/thuscc24team04/.vscode-server/data/User/workspaceStorage/17916b0b5a59b7765117b3edf08c6227/vscode.lock': The lock does not look stale, elapsed: 1280 ms, giving up.
+2024-11-18 19:22:48.288 [info] Lock '/home/thuscc24team04/.vscode-server/data/User/workspaceStorage/17916b0b5a59b7765117b3edf08c6227-1/vscode.lock': Lock acquired.
+2024-11-18 19:22:48.546 [info] ExtensionService#_doActivateExtension vscode.git-base, startup: false, activationEvent: '*'
+2024-11-18 19:22:48.609 [info] ExtensionService#_doActivateExtension vscode.github, startup: false, activationEvent: '*'
+2024-11-18 19:22:48.908 [info] Eager extensions activated
+2024-11-18 19:22:48.908 [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch, startup: false, activationEvent: 'onStartupFinished'
+2024-11-18 19:22:48.910 [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'
+2024-11-18 19:22:49.700 [info] ExtensionService#_doActivateExtension vscode.git, startup: false, activationEvent: 'api', root cause: vscode.github
+2024-11-18 19:22:49.722 [info] ExtensionService#_doActivateExtension GitHub.copilot, startup: false, activationEvent: 'onStartupFinished'
+2024-11-18 19:22:49.722 [info] ExtensionService#_doActivateExtension GitHub.copilot-chat, startup: false, activationEvent: 'onStartupFinished'
+2024-11-18 19:22:52.649 [info] ExtensionService#_doActivateExtension vscode.emmet, startup: false, activationEvent: 'onLanguage'
+2024-11-18 19:22:53.685 [info] ExtensionService#_doActivateExtension vscode.extension-editing, startup: false, activationEvent: 'onLanguage:markdown'
+2024-11-18 19:22:53.685 [info] ExtensionService#_doActivateExtension vscode.markdown-language-features, startup: false, activationEvent: 'onLanguage:markdown'
+2024-11-18 19:22:54.195 [info] ExtensionService#_doActivateExtension vscode.markdown-math, startup: false, activationEvent: 'api', root cause: vscode.markdown-language-features
+2024-11-18 19:24:45.700 [warning] [Decorations] CAPPING events from decorations provider vscode.git 1803
+2024-11-18 19:24:45.990 [warning] [Decorations] CAPPING events from decorations provider vscode.git 1803
+2024-11-18 19:26:10.150 [warning] [Decorations] CAPPING events from decorations provider vscode.git 1803
+2024-11-18 19:27:27.006 [warning] [Decorations] CAPPING events from decorations provider vscode.git 1802
+2024-11-18 19:27:52.011 [info] ExtensionService#_doActivateExtension vscode.npm, startup: false, activationEvent: 'onTerminalQuickFixRequest:ms-vscode.npm-command'

@@ -1,0 +1,169 @@
+2024-11-18 18:58:52.209 [info] [main] Log level: Info
+2024-11-18 18:58:52.209 [info] [main] Validating found git in: "git"
+2024-11-18 18:58:52.209 [info] [main] Using git "1.8.3.1" from "git"
+2024-11-18 18:58:52.209 [info] [Model][doInitialScan] Initial repository scan started
+2024-11-18 18:58:52.209 [info] > git rev-parse --show-toplevel [982ms]
+2024-11-18 18:58:52.209 [info] fatal: Not a git repository (or any parent up to mount point /WORK)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+2024-11-18 18:58:52.210 [info] > git rev-parse --show-toplevel [11ms]
+2024-11-18 18:58:52.210 [info] fatal: Not a git repository (or any parent up to mount point /WORK)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+2024-11-18 18:58:52.213 [info] > git rev-parse --show-toplevel [9ms]
+2024-11-18 18:58:52.214 [info] fatal: Not a git repository (or any parent up to mount point /WORK)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+2024-11-18 18:58:52.234 [info] > git rev-parse --show-toplevel [10ms]
+2024-11-18 18:58:52.234 [info] fatal: Not a git repository (or any parent up to mount point /WORK)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+2024-11-18 18:58:52.247 [info] > git rev-parse --show-toplevel [5ms]
+2024-11-18 18:58:52.247 [info] fatal: Not a git repository (or any parent up to mount point /WORK)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+2024-11-18 18:58:52.259 [info] > git rev-parse --show-toplevel [4ms]
+2024-11-18 18:58:52.259 [info] fatal: Not a git repository (or any parent up to mount point /WORK)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+2024-11-18 18:58:52.271 [info] > git rev-parse --show-toplevel [5ms]
+2024-11-18 18:58:52.271 [info] fatal: Not a git repository (or any parent up to mount point /WORK)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+2024-11-18 18:58:52.277 [info] [Model][doInitialScan] Initial repository scan completed - repositories (0), closed repositories (0), parent repositories (0), unsafe repositories (0)
+2024-11-18 18:59:18.193 [info] > git rev-parse --show-toplevel [2ms]
+2024-11-18 18:59:18.193 [info] fatal: Not a git repository (or any parent up to mount point /WORK)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+2024-11-18 18:59:38.351 [info] > git rev-parse --show-toplevel [3ms]
+2024-11-18 18:59:38.351 [info] fatal: Not a git repository (or any parent up to mount point /WORK)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+2024-11-18 19:00:16.511 [info] > git rev-parse --show-toplevel [3ms]
+2024-11-18 19:00:16.511 [info] fatal: Not a git repository (or any parent up to mount point /WORK)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+2024-11-18 19:00:34.532 [info] > git rev-parse --show-toplevel [2ms]
+2024-11-18 19:00:34.532 [info] fatal: Not a git repository (or any parent up to mount point /WORK)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+2024-11-18 19:01:31.016 [info] > git rev-parse --show-toplevel [3ms]
+2024-11-18 19:01:31.017 [info] fatal: Not a git repository (or any parent up to mount point /WORK)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+2024-11-18 19:01:57.499 [info] > git rev-parse --show-toplevel [3ms]
+2024-11-18 19:01:57.500 [info] fatal: Not a git repository (or any parent up to mount point /WORK)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+2024-11-18 19:03:09.151 [info] > git rev-parse --show-toplevel [3ms]
+2024-11-18 19:03:09.152 [info] fatal: Not a git repository (or any parent up to mount point /WORK)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+2024-11-18 19:03:11.623 [info] > git rev-parse --show-toplevel [19ms]
+2024-11-18 19:03:11.623 [info] fatal: Not a git repository (or any parent up to mount point /WORK)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+2024-11-18 19:13:52.026 [info] > git rev-parse --show-toplevel [2ms]
+2024-11-18 19:13:52.026 [info] fatal: Not a git repository (or any parent up to mount point /WORK)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+2024-11-18 19:19:53.647 [info] > git rev-parse --show-toplevel [3ms]
+2024-11-18 19:19:53.647 [info] fatal: Not a git repository (or any parent up to mount point /WORK)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+2024-11-18 19:21:53.520 [info] > git rev-parse --show-toplevel [3ms]
+2024-11-18 19:21:53.520 [info] fatal: Not a git repository (or any parent up to mount point /WORK)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+2024-11-18 19:22:00.818 [info] > git rev-parse --show-toplevel [2ms]
+2024-11-18 19:22:00.818 [info] fatal: Not a git repository (or any parent up to mount point /WORK)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+2024-11-18 19:22:16.068 [info] > git rev-parse --show-toplevel [32ms]
+2024-11-18 19:22:16.068 [info] fatal: Not a git repository (or any parent up to mount point /WORK)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+2024-11-18 19:22:17.355 [info] > git rev-parse --show-toplevel [2ms]
+2024-11-18 19:22:17.355 [info] fatal: Not a git repository (or any parent up to mount point /WORK)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+2024-11-18 19:22:18.763 [info] > git rev-parse --show-toplevel [3ms]
+2024-11-18 19:22:18.763 [info] fatal: Not a git repository (or any parent up to mount point /WORK)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+2024-11-18 19:22:44.847 [info] > git rev-parse --show-toplevel [2ms]
+2024-11-18 19:22:44.847 [info] fatal: Not a git repository (or any parent up to mount point /WORK)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+2024-11-18 19:24:16.554 [info] > git rev-parse --show-toplevel [2ms]
+2024-11-18 19:24:16.554 [info] fatal: Not a git repository (or any parent up to mount point /WORK)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+2024-11-18 19:24:18.030 [info] > git rev-parse --show-toplevel [2ms]
+2024-11-18 19:24:18.030 [info] fatal: Not a git repository (or any parent up to mount point /WORK)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+2024-11-18 19:24:20.887 [info] > git rev-parse --show-toplevel [2ms]
+2024-11-18 19:24:20.887 [info] fatal: Not a git repository (or any parent up to mount point /WORK)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+2024-11-18 19:24:21.973 [info] > git rev-parse --show-toplevel [2ms]
+2024-11-18 19:24:21.973 [info] fatal: Not a git repository (or any parent up to mount point /WORK)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+2024-11-18 19:24:23.164 [info] > git rev-parse --show-toplevel [2ms]
+2024-11-18 19:24:23.164 [info] fatal: Not a git repository (or any parent up to mount point /WORK)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+2024-11-18 19:24:24.619 [info] > git rev-parse --show-toplevel [2ms]
+2024-11-18 19:24:24.619 [info] fatal: Not a git repository (or any parent up to mount point /WORK)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+2024-11-18 19:24:25.841 [info] > git rev-parse --show-toplevel [2ms]
+2024-11-18 19:24:25.841 [info] fatal: Not a git repository (or any parent up to mount point /WORK)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+2024-11-18 19:24:45.507 [info] > git rev-parse --show-toplevel [3ms]
+2024-11-18 19:24:45.526 [info] > git rev-parse --git-dir --git-common-dir [4ms]
+2024-11-18 19:24:45.559 [info] [Model][openRepository] Opened repository: /WORK/thuscc24team04_work/Neko
+2024-11-18 19:24:45.575 [warning] [Git][getRemotes] Error: ENOENT: no such file or directory, open '/WORK/thuscc24team04_work/Neko/--git-common-dir/config'
+2024-11-18 19:24:45.589 [info] > git fetch [32ms]
+2024-11-18 19:24:45.590 [info] fatal: No remote repository specified.  Please, specify either a URL or a
+remote name from which new revisions should be fetched.
+2024-11-18 19:24:45.601 [warning] [Git][getRemotes] Error: ENOENT: no such file or directory, open '/WORK/thuscc24team04_work/Neko/--git-common-dir/config'
+2024-11-18 19:24:45.605 [info] > git config --get commit.template [18ms]
+2024-11-18 19:24:45.605 [info] > git remote --verbose [30ms]
+2024-11-18 19:24:45.616 [info] > git remote --verbose [15ms]
+2024-11-18 19:24:45.626 [info] > git config --get commit.template [11ms]
+2024-11-18 19:24:45.636 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname) refs/heads/master refs/remotes/master [9ms]
+2024-11-18 19:24:45.636 [warning] [Git][getBranch] No such branch: master
+2024-11-18 19:24:45.671 [warning] [Git][getRemotes] Error: ENOENT: no such file or directory, open '/WORK/thuscc24team04_work/Neko/--git-common-dir/config'
+2024-11-18 19:24:45.683 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname) refs/heads/master refs/remotes/master [29ms]
+2024-11-18 19:24:45.683 [warning] [Git][getBranch] No such branch: master
+2024-11-18 19:24:45.684 [error] [GitHistoryProvider][resolveHEADMergeBase] Failed to resolve merge base for master: Error: No such branch: master.
+2024-11-18 19:24:45.686 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname) refs/heads/master refs/remotes/master [51ms]
+2024-11-18 19:24:45.687 [warning] [Git][getBranch] No such branch: master
+2024-11-18 19:24:45.692 [info] > git config --get commit.template [9ms]
+2024-11-18 19:24:45.692 [info] > git remote --verbose [22ms]
+2024-11-18 19:24:45.715 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname) refs/heads/master refs/remotes/master [15ms]
+2024-11-18 19:24:45.715 [warning] [Git][getBranch] No such branch: master
+2024-11-18 19:24:45.747 [info] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [5ms]
+2024-11-18 19:24:45.819 [info] > git status -z -uall [91ms]
+2024-11-18 19:25:57.051 [warning] [Git][getRemotes] Error: ENOENT: no such file or directory, open '/WORK/thuscc24team04_work/Neko/--git-common-dir/config'
+2024-11-18 19:25:57.062 [info] > git remote --verbose [10ms]
+2024-11-18 19:25:57.071 [info] > git config --get commit.template [11ms]
+2024-11-18 19:25:57.075 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname) refs/heads/master refs/remotes/master [5ms]
+2024-11-18 19:25:57.075 [warning] [Git][getBranch] No such branch: master
+2024-11-18 19:25:57.104 [info] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [6ms]
+2024-11-18 19:25:57.180 [info] > git status -z -uall [93ms]
+2024-11-18 19:26:26.425 [warning] [Git][getRemotes] Error: ENOENT: no such file or directory, open '/WORK/thuscc24team04_work/Neko/--git-common-dir/config'
+2024-11-18 19:26:26.438 [info] > git remote --verbose [13ms]
+2024-11-18 19:26:26.448 [info] > git config --get commit.template [10ms]
+2024-11-18 19:26:26.452 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname) refs/heads/master refs/remotes/master [5ms]
+2024-11-18 19:26:26.452 [warning] [Git][getBranch] No such branch: master
+2024-11-18 19:26:26.475 [info] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [5ms]
+2024-11-18 19:26:26.545 [info] > git status -z -uall [84ms]
+2024-11-18 19:28:32.558 [info] > git fetch [7ms]
+2024-11-18 19:28:32.559 [info] fatal: No remote repository specified.  Please, specify either a URL or a
+remote name from which new revisions should be fetched.
+2024-11-18 19:28:32.568 [warning] [Git][getRemotes] Error: ENOENT: no such file or directory, open '/WORK/thuscc24team04_work/Neko/--git-common-dir/config'
+2024-11-18 19:28:32.578 [info] > git remote --verbose [10ms]
+2024-11-18 19:28:32.590 [info] > git config --get commit.template [13ms]
+2024-11-18 19:28:32.596 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname) refs/heads/master refs/remotes/master [6ms]
+2024-11-18 19:28:32.596 [warning] [Git][getBranch] No such branch: master
+2024-11-18 19:28:32.625 [info] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [6ms]
+2024-11-18 19:28:32.705 [info] > git status -z -uall [98ms]
+2024-11-18 19:28:53.995 [warning] [Git][getHEAD] Failed to parse HEAD file: ENOENT: no such file or directory, open '/WORK/thuscc24team04_work/Neko/.git/HEAD'
+2024-11-18 19:28:54.013 [warning] [Git][getRemotes] Error: ENOENT: no such file or directory, open '/WORK/thuscc24team04_work/Neko/--git-common-dir/config'
+2024-11-18 19:28:54.014 [info] > git symbolic-ref --short HEAD [19ms]
+2024-11-18 19:28:54.015 [info] fatal: Not a git repository (or any parent up to mount point /WORK)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+2024-11-18 19:28:54.027 [info] > git remote --verbose [14ms]
+2024-11-18 19:28:54.027 [info] fatal: Not a git repository (or any parent up to mount point /WORK)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+2024-11-18 19:28:54.032 [info] > git config --get commit.template [27ms]
+2024-11-18 19:28:54.042 [warning] [Git][getHEAD] Failed to parse HEAD file: ENOENT: no such file or directory, open '/WORK/thuscc24team04_work/Neko/.git/HEAD'
+2024-11-18 19:28:54.052 [warning] [Git][getRemotes] Error: ENOENT: no such file or directory, open '/WORK/thuscc24team04_work/Neko/--git-common-dir/config'
+2024-11-18 19:28:54.063 [info] > git rev-parse HEAD [38ms]
+2024-11-18 19:28:54.063 [info] fatal: Not a git repository (or any parent up to mount point /WORK)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+2024-11-18 19:28:54.064 [info] > git remote --verbose [12ms]
+2024-11-18 19:28:54.065 [info] fatal: Not a git repository (or any parent up to mount point /WORK)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+2024-11-18 19:28:54.065 [info] > git symbolic-ref --short HEAD [23ms]
+2024-11-18 19:28:54.067 [info] fatal: Not a git repository (or any parent up to mount point /WORK)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+2024-11-18 19:28:54.079 [info] > git config --get commit.template [17ms]
+2024-11-18 19:28:54.080 [info] > git rev-parse HEAD [5ms]
+2024-11-18 19:28:54.081 [info] fatal: Not a git repository (or any parent up to mount point /WORK)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).

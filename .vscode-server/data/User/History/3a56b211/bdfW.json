@@ -1,0 +1,71 @@
+{
+    "editor.fontSize": 17,
+    "editor.fontFamily": "MesloLGM Nerd Font",
+    "debug.console.fontSize": 15,
+    "scm.inputFontSize": 14,
+    "terminal.integrated.fontSize": 15,
+    "chat.editor.fontSize": 16,
+    "workbench.iconTheme": "vscode-great-icons",
+    "files.autoSave": "afterDelay",
+    "editor.formatOnSave": true,
+    "editor.formatOnPaste": true,
+    "editor.defaultFormatter": "FittenTech.Fitten-Code",
+    "scss.format.spaceAroundSelectorSeparator": true,
+    "[typescript]": {
+        "editor.defaultFormatter": "vscode.typescript-language-features"
+    },
+    "[python]": {
+        "diffEditor.ignoreTrimWhitespace": false
+    },
+    "[cpp]": {
+        "editor.defaultFormatter": "ms-vscode.cpptools"
+    },
+    "security.workspace.trust.untrustedFiles": "open",
+    "terminal.integrated.enableMultiLinePasteWarning": false,
+    "editor.guides.bracketPairs": true,
+    "explorer.confirmPasteNative": false,
+    "git.autofetch": true,
+    "git.decorations.enabled": false,
+    "remote.autoForwardPortsSource": "hybrid",
+    "workbench.editor.wrapTabs": true,
+    "editor.wordWrap": "on",
+    "remote.SSH.remotePlatform": {
+        "166.111.68.163": "linux",
+        "192.168.11.1": "linux"
+    },
+    "[typescriptreact]": {
+        "editor.defaultFormatter": "vscode.typescript-language-features"
+    },
+    "[cuda-cpp]": {
+        "editor.defaultFormatter": "ms-vscode.cpptools"
+    },
+    "workbench.colorTheme": "Monokai Pirokai - Arctic Frost",
+    "fittencode.languagePreference.displayPreference": "zh-cn",
+    "fittencode.languagePreference.commentPreference": "zh-cn",
+    "[systemverilog]": {
+        "editor.defaultFormatter": "mshr-h.veriloghdl"
+    },
+    "cmake.pinnedCommands": [
+        "workbench.action.tasks.configureTaskRunner",
+        "workbench.action.tasks.runTask"
+    ],
+    "fittencode.disableSpecificInlineCompletion.suffixes": "",
+    "workbench.editorAssociations": {
+        "*.md": "default"
+    },
+    "backgroundCover.imagePath": "d:\\photo\\wallpaper\\snowscapegirl.png",
+    "cmake.showOptionsMovedNotification": false,
+    "backgroundCover.opacity": 0.5,
+    "[jsonc]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "[moonbit]": {
+        "editor.defaultFormatter": "moonbit.moonbit-lang"
+    },
+    "moonbit.ai.telemetry": "on",
+    "explorer.confirmDragAndDrop": false,
+    "security.allowedUNCHosts": [
+        "wsl.localhost"
+    ],
+    "zig.initialSetupDone": false
+}

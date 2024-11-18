@@ -1,0 +1,25 @@
+2024-11-18 19:22:44.347 [info] Can't use the Electron fetcher in this environment.
+2024-11-18 19:22:44.347 [info] Using the Helix fetcher.
+2024-11-18 19:22:44.347 [info] Initializing Git extension service.
+2024-11-18 19:22:44.347 [info] Successfully activated the vscode.git extension.
+2024-11-18 19:22:44.347 [info] Enablement state of the vscode.git extension: true.
+2024-11-18 19:22:44.347 [info] Successfully registered Git commit message provider.
+2024-11-18 19:22:44.449 [info] Logged in as thuEcstasy
+2024-11-18 19:22:44.530 [error] Error: error:0480006C:PEM routines::no start line
+    at new X509Certificate (node:internal/crypto/x509:119:21)
+    at /home/thuscc24team04/.vscode-server/extensions/github.copilot-chat-0.22.3/dist/extension.js:784:7894
+    at Array.filter (<anonymous>)
+    at Tw.removeExpiredCertificates (/home/thuscc24team04/.vscode-server/extensions/github.copilot-chat-0.22.3/dist/extension.js:784:7873)
+    at Tw.getAllRootCAs (/home/thuscc24team04/.vscode-server/extensions/github.copilot-chat-0.22.3/dist/extension.js:784:7708)
+    at Cw.createSecureContext (/home/thuscc24team04/.vscode-server/extensions/github.copilot-chat-0.22.3/dist/extension.js:784:9635)
+    at Cw.applyToRequestOptions (/home/thuscc24team04/.vscode-server/extensions/github.copilot-chat-0.22.3/dist/extension.js:784:9881)
+    at Ey.fetch (/home/thuscc24team04/.vscode-server/extensions/github.copilot-chat-0.22.3/dist/extension.js:785:2148)
+    at iE.fetchCopilotToken (/home/thuscc24team04/.vscode-server/extensions/github.copilot-chat-0.22.3/dist/extension.js:282:35579)
+    at iE.authFromGitHubToken (/home/thuscc24team04/.vscode-server/extensions/github.copilot-chat-0.22.3/dist/extension.js:282:33288)
+    at iE._auth (/home/thuscc24team04/.vscode-server/extensions/github.copilot-chat-0.22.3/dist/extension.js:613:2720)
+    at iE._authShowWarnings (/home/thuscc24team04/.vscode-server/extensions/github.copilot-chat-0.22.3/dist/extension.js:613:2900)
+    at iE.getCopilotToken (/home/thuscc24team04/.vscode-server/extensions/github.copilot-chat-0.22.3/dist/extension.js:613:2135)
+    at jk.getCopilotToken (/home/thuscc24team04/.vscode-server/extensions/github.copilot-chat-0.22.3/dist/extension.js:282:37843)
+    at jk._handleAuthChangeEvent (/home/thuscc24team04/.vscode-server/extensions/github.copilot-chat-0.22.3/dist/extension.js:282:38850): Failed to parse certificate # ACCVRAIZ1
+
+2024-11-18 19:22:44.530 [info] Removed 12 expired certificates
